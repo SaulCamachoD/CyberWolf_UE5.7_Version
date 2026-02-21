@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "CyberWolf_57V",
+			"Path": "..\\Source\\CyberWolf_57V.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "CyberWolf_57VEditor",
+			"Path": "..\\Source\\CyberWolf_57VEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

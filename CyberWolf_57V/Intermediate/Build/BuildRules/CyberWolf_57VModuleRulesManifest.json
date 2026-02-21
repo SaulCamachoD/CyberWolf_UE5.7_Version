@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\UnrealEngineProyects\\CyberWolfUE5,7Game\\CyberWolf_UE5.7_Version\\CyberWolf_57V\\Source\\CyberWolf_57V\\CyberWolf_57V.Build.cs",
+		"C:\\UnrealEngineProyects\\CyberWolfUE5,7Game\\CyberWolf_UE5.7_Version\\CyberWolf_57V\\Source\\CyberWolf_57V.Target.cs",
+		"C:\\UnrealEngineProyects\\CyberWolfUE5,7Game\\CyberWolf_UE5.7_Version\\CyberWolf_57V\\Source\\CyberWolf_57VEditor.Target.cs"
+	],
+	"EngineVersion": "5.7.3"
+}

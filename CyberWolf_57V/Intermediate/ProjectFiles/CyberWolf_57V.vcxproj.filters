@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\CyberWolf_57V.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CyberWolf_57V.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\CyberWolf_57VEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Source\CyberWolf_57V">
+      <UniqueIdentifier>{5ADC7E58-1606-35ED-8A81-F82BA3896401}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CyberWolf_57V\CyberWolf_57V.Build.cs">
+      <Filter>Source\CyberWolf_57V</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\CyberWolf_57V\CyberWolf_57V.cpp">
+      <Filter>Source\CyberWolf_57V</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CyberWolf_57V\CyberWolf_57V.h">
+      <Filter>Source\CyberWolf_57V</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
