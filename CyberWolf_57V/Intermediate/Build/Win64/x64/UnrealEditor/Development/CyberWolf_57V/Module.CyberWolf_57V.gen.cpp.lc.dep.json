@@ -1,0 +1,30 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cyberwolf_57v\\module.cyberwolf_57v.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\x64\\cyberwolf_57veditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cyberwolf_57v\\definitions.cyberwolf_57v.h",
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\unrealeditor\\inc\\cyberwolf_57v\\uht\\cyberwolf_57v.init.gen.cpp",
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\unrealeditor\\inc\\cyberwolf_57v\\uht\\movementdata.gen.cpp",
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\source\\cyberwolf_57v\\public\\data\\movementdata.h",
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\unrealeditor\\inc\\cyberwolf_57v\\uht\\movementdata.generated.h",
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\unrealeditor\\inc\\cyberwolf_57v\\uht\\myenhancedinputcomponent.gen.cpp",
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\source\\cyberwolf_57v\\public\\input\\myenhancedinputcomponent.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\enhancedinputcomponent.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputaction.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputmodifiers.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputactionvalue.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputactionvalue.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputmodifiers.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputtriggers.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputtriggers.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputaction.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\enhancedinputcomponent.generated.h",
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\unrealeditor\\inc\\cyberwolf_57v\\uht\\myenhancedinputcomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

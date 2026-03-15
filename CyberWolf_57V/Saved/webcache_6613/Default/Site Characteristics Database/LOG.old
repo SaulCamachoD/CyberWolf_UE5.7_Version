@@ -1,5 +1,3 @@
-2026/03/14-19:46:44.839 ba64 Log #3: 2 ops saved to Table #4 OK
-2026/03/14-19:46:44.842 ba64 Archiving C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\Site Characteristics Database/000003.log: OK
-2026/03/14-19:46:44.843 ba64 Table #4: 2 entries OK
-2026/03/14-19:46:44.844 ba64 Archiving C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\Site Characteristics Database/MANIFEST-000001: OK
-2026/03/14-19:46:44.855 ba64 **** Repaired leveldb C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\Site Characteristics Database; recovered 1 files; 179 bytes. Some data may have been lost. ****
+2026/03/14-21:05:21.547 8ea0 Reusing MANIFEST C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\Site Characteristics Database/MANIFEST-000001
+2026/03/14-21:05:21.548 8ea0 Recovering log #9
+2026/03/14-21:05:21.549 8ea0 Reusing old log C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\Site Characteristics Database/000009.log 

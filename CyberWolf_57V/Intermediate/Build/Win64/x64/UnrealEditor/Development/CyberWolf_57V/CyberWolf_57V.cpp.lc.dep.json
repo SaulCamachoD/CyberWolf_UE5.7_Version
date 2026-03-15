@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\source\\cyberwolf_57v\\cyberwolf_57v.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\x64\\cyberwolf_57veditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cyberwolf_57v\\definitions.cyberwolf_57v.h",
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\source\\cyberwolf_57v\\cyberwolf_57v.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
