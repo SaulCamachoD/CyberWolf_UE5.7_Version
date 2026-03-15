@@ -20,9 +20,9 @@
 /ALTERNATENAME:__imp___std_init_once_complete=__imp_InitOnceComplete
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
-/LIBPATH:"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/lib/x64"
-/LIBPATH:"C:/Program Files (x86)/Windows Kits/10/lib/10.0.26100.0/ucrt/x64"
-/LIBPATH:"C:/Program Files (x86)/Windows Kits/10/lib/10.0.26100.0/um/x64"
+/LIBPATH:"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/lib/x64"
+/LIBPATH:"C:/Program Files (x86)/Windows Kits/10/lib/10.0.22621.0/ucrt/x64"
+/LIBPATH:"C:/Program Files (x86)/Windows Kits/10/lib/10.0.22621.0/um/x64"
 /NODEFAULTLIB:"LIBCMT"
 /NODEFAULTLIB:"LIBCPMT"
 /NODEFAULTLIB:"LIBCMTD"
@@ -36,10 +36,10 @@
 /FUNCTIONPADMIN:6
 /NOIMPLIB
 /NOEXP
-"C:/UnrealEngineProyects/CyberWolfUE5,7Game/CyberWolf_UE5.7_Version/CyberWolf_57V/Intermediate/Build/Win64/x64/CyberWolf_57VEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
-"C:/UnrealEngineProyects/CyberWolfUE5,7Game/CyberWolf_UE5.7_Version/CyberWolf_57V/Intermediate/Build/Win64/x64/UnrealEditor/Development/CyberWolf_57V/CyberWolf_57V.cpp.obj"
-"C:/UnrealEngineProyects/CyberWolfUE5,7Game/CyberWolf_UE5.7_Version/CyberWolf_57V/Intermediate/Build/Win64/x64/UnrealEditor/Development/CyberWolf_57V/PerModuleInline.gen.cpp.obj"
-"C:/UnrealEngineProyects/CyberWolfUE5,7Game/CyberWolf_UE5.7_Version/CyberWolf_57V/Intermediate/Build/Win64/x64/UnrealEditor/Development/CyberWolf_57V/Default.rc2.res"
+"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Intermediate/Build/Win64/x64/CyberWolf_57VEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Intermediate/Build/Win64/x64/UnrealEditor/Development/CyberWolf_57V/CyberWolf_57V.cpp.obj"
+"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Intermediate/Build/Win64/x64/UnrealEditor/Development/CyberWolf_57V/PerModuleInline.gen.cpp.obj"
+"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Intermediate/Build/Win64/x64/UnrealEditor/Development/CyberWolf_57V/Default.rc2.res"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Core/UnrealEditor-Core.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/CoreUObject/UnrealEditor-CoreUObject.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Engine/UnrealEditor-Engine.lib"
@@ -70,6 +70,6 @@
 "synchronization.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:/UnrealEngineProyects/CyberWolfUE5,7Game/CyberWolf_UE5.7_Version/CyberWolf_57V/Binaries/Win64/UnrealEditor-CyberWolf_57V.dll"
-/PDB:"C:/UnrealEngineProyects/CyberWolfUE5,7Game/CyberWolf_UE5.7_Version/CyberWolf_57V/Binaries/Win64/UnrealEditor-CyberWolf_57V.pdb"
+/OUT:"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Binaries/Win64/UnrealEditor-CyberWolf_57V.dll"
+/PDB:"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Binaries/Win64/UnrealEditor-CyberWolf_57V.pdb"
 /ignore:4078
