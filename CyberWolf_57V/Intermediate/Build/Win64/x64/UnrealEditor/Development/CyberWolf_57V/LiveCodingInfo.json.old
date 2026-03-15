@@ -3,7 +3,9 @@
 	{
 		"Module.CyberWolf_57V.gen.cpp.obj": [
 			"CyberWolf_57V.init.gen.cpp.obj",
-			"MovementData.gen.cpp.obj"
+			"KKC_EnhancedInputComponent.gen.cpp.obj",
+			"KKC_MovementData.gen.cpp.obj",
+			"KKC_WolfPlayer.gen.cpp.obj"
 		]
 	}
 }

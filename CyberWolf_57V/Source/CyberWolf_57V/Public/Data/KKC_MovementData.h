@@ -4,16 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
-#include "MovementData.generated.h"
+#include "KKC_MovementData.generated.h"
 
 /**
  * 
  */
 UCLASS(NotBlueprintType)
-class CYBERWOLF_57V_API UMovementData : public UDataAsset
+class CYBERWOLF_57V_API UKKC_MovementData : public UDataAsset
 {
 	GENERATED_BODY()
 	
+public:
 	UPROPERTY(EditDefaultsOnly, Category="Locomotion")
 	float WalkSpeed = 400.f;
 

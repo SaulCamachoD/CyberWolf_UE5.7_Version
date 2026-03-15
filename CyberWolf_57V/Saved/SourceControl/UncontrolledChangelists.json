@@ -5,7 +5,8 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Maps/FirstLevel.umap"
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Maps/FirstLevel.umap",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Blueprints/WolfPlayer/BP_WolfPlayer.uasset"
 			]
 		}
 	]
