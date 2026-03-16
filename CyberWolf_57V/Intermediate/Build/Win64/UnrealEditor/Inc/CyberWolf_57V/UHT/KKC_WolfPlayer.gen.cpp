@@ -15,9 +15,12 @@ void EmptyLinkFunctionForGeneratedCodeKKC_WolfPlayer() {}
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_AKKC_WolfPlayer();
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_AKKC_WolfPlayer_NoRegister();
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_AirMovementComponent_NoRegister();
+CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_CameraComponents_NoRegister();
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_FlightComponent_NoRegister();
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_LocomotionComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 UPackage* Z_Construct_UPackage__Script_CyberWolf_57V();
@@ -84,6 +87,25 @@ struct Z_Construct_UClass_AKKC_WolfPlayer_Statics
 		{ "Category", "Input" },
 		{ "ModuleRelativePath", "Public/Characters/MainPlayer/KKC_WolfPlayer.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IA_Look_MetaData[] = {
+		{ "Category", "Input" },
+		{ "ModuleRelativePath", "Public/Characters/MainPlayer/KKC_WolfPlayer.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpringArmComp_MetaData[] = {
+		{ "Category", "Camera" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Characters/MainPlayer/KKC_WolfPlayer.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CameraComp_MetaData[] = {
+		{ "Category", "Camera" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Characters/MainPlayer/KKC_WolfPlayer.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CameraComponent_MetaData[] = {
+		{ "Category", "Camera" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Characters/MainPlayer/KKC_WolfPlayer.h" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Class AKKC_WolfPlayer constinit property declarations **************************
@@ -92,6 +114,10 @@ struct Z_Construct_UClass_AKKC_WolfPlayer_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FlightComp;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InputMappingContext;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_Move;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_IA_Look;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_SpringArmComp;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraComp;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class AKKC_WolfPlayer constinit property declarations ****************************
 	static UObject* (*const DependentSingletons[])();
@@ -107,12 +133,20 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKKC_WolfPlaye
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_FlightComp = { "FlightComp", nullptr, (EPropertyFlags)0x01440000000a0009, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AKKC_WolfPlayer, FlightComp), Z_Construct_UClass_UKKC_FlightComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FlightComp_MetaData), NewProp_FlightComp_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_InputMappingContext = { "InputMappingContext", nullptr, (EPropertyFlags)0x0144000000010001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AKKC_WolfPlayer, InputMappingContext), Z_Construct_UClass_UInputMappingContext_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InputMappingContext_MetaData), NewProp_InputMappingContext_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_IA_Move = { "IA_Move", nullptr, (EPropertyFlags)0x0144000000010001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AKKC_WolfPlayer, IA_Move), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Move_MetaData), NewProp_IA_Move_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_IA_Look = { "IA_Look", nullptr, (EPropertyFlags)0x0144000000010001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AKKC_WolfPlayer, IA_Look), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IA_Look_MetaData), NewProp_IA_Look_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_SpringArmComp = { "SpringArmComp", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AKKC_WolfPlayer, SpringArmComp), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpringArmComp_MetaData), NewProp_SpringArmComp_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_CameraComp = { "CameraComp", nullptr, (EPropertyFlags)0x00200800000a0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AKKC_WolfPlayer, CameraComp), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraComp_MetaData), NewProp_CameraComp_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_CameraComponent = { "CameraComponent", nullptr, (EPropertyFlags)0x01240800000a0009, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AKKC_WolfPlayer, CameraComponent), Z_Construct_UClass_UKKC_CameraComponents_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraComponent_MetaData), NewProp_CameraComponent_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AKKC_WolfPlayer_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_LocomotionComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_AirMovementComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_FlightComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_InputMappingContext,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_IA_Move,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_IA_Look,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_SpringArmComp,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_CameraComp,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKKC_WolfPlayer_Statics::NewProp_CameraComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AKKC_WolfPlayer_Statics::PropPointers) < 2048);
 // ********** End Class AKKC_WolfPlayer Property Definitions ***************************************
@@ -155,10 +189,10 @@ AKKC_WolfPlayer::~AKKC_WolfPlayer() {}
 struct Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_KKC_WolfPlayer_h__Script_CyberWolf_57V_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AKKC_WolfPlayer, AKKC_WolfPlayer::StaticClass, TEXT("AKKC_WolfPlayer"), &Z_Registration_Info_UClass_AKKC_WolfPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AKKC_WolfPlayer), 851545836U) },
+		{ Z_Construct_UClass_AKKC_WolfPlayer, AKKC_WolfPlayer::StaticClass, TEXT("AKKC_WolfPlayer"), &Z_Registration_Info_UClass_AKKC_WolfPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AKKC_WolfPlayer), 2166036336U) },
 	};
 }; // Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_KKC_WolfPlayer_h__Script_CyberWolf_57V_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_KKC_WolfPlayer_h__Script_CyberWolf_57V_3804684370{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_KKC_WolfPlayer_h__Script_CyberWolf_57V_4132186955{
 	TEXT("/Script/CyberWolf_57V"),
 	Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_KKC_WolfPlayer_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_KKC_WolfPlayer_h__Script_CyberWolf_57V_Statics::ClassInfo),
 	nullptr, 0,

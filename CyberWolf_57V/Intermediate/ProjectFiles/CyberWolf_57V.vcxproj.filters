@@ -57,6 +57,9 @@
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_AirMovementComponent.cpp">
       <Filter>Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_CameraComponents.cpp">
+      <Filter>Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_FlightComponent.cpp">
       <Filter>Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents</Filter>
     </ClCompile>
@@ -66,6 +69,9 @@
     <Filter Include="Source\CyberWolf_57V\Private\Data">
       <UniqueIdentifier>{D699029C-B8D4-39E2-9992-3CE6E02E3BE6}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Data\KKC_CameraData.cpp">
+      <Filter>Source\CyberWolf_57V\Private\Data</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Data\KKC_MovementData.cpp">
       <Filter>Source\CyberWolf_57V\Private\Data</Filter>
     </ClCompile>
@@ -93,6 +99,9 @@
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_AirMovementComponent.h">
       <Filter>Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_CameraComponents.h">
+      <Filter>Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_FlightComponent.h">
       <Filter>Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents</Filter>
     </ClInclude>
@@ -102,6 +111,9 @@
     <Filter Include="Source\CyberWolf_57V\Public\Data">
       <UniqueIdentifier>{4402407F-193B-3AC7-849A-F8079B23C4FF}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Data\KKC_CameraData.h">
+      <Filter>Source\CyberWolf_57V\Public\Data</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Data\KKC_MovementData.h">
       <Filter>Source\CyberWolf_57V\Public\Data</Filter>
     </ClInclude>

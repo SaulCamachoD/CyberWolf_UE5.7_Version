@@ -268,10 +268,16 @@
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_AirMovementComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_CameraComponents.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_FlightComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_LocomotionComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Data\KKC_CameraData.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Data\KKC_MovementData.cpp">
@@ -282,8 +288,10 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\KKC_WolfPlayer.h"/>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_AirMovementComponent.h"/>
+    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_CameraComponents.h"/>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_FlightComponent.h"/>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_LocomotionComponent.h"/>
+    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Data\KKC_CameraData.h"/>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Data\KKC_MovementData.h"/>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Input\KKC_EnhancedInputComponent.h"/>
   </ItemGroup>

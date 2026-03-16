@@ -6,7 +6,13 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Maps/FirstLevel.umap",
-				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Blueprints/WolfPlayer/BP_WolfPlayer.uasset"
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Blueprints/WolfPlayer/BP_WolfPlayer.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Blueprints/GameMode/BP_GameMModePreliminar.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Inputs/IA_Move.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Inputs/IA_Look.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Inputs/IMC_MainInputMappingContext.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Data/DA_CameraData.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/UE4_Mannequin_Mobile/Mesh/SK_Mannequin_Mobile.uasset"
 			]
 		}
 	]

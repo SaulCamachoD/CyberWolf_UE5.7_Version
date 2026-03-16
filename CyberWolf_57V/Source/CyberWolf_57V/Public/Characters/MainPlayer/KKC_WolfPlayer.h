@@ -10,8 +10,12 @@
 #include "KKC_WolfPlayer.generated.h"
 
 
+class UKKC_CameraComponents;
 class UInputMappingContext;
 class UInputAction;
+class USpringArmComponent;
+class UCameraComponent;
+
 struct FInputActionValue;
 
 UCLASS()
@@ -34,12 +38,23 @@ class CYBERWOLF_57V_API AKKC_WolfPlayer : public ACharacter
 	UPROPERTY(EditDefaultsOnly, Category="Input")
 	TObjectPtr<UInputAction> IA_Move;
 	
+	UPROPERTY(EditDefaultsOnly, Category="Input")
+	TObjectPtr<UInputAction> IA_Look;
+	
 
 public:
 	AKKC_WolfPlayer();
 
 protected:
 	virtual void BeginPlay() override;
+	
+	UPROPERTY(VisibleAnywhere, Category="Camera")
+	USpringArmComponent* SpringArmComp;
+	UPROPERTY(VisibleAnywhere, Category="Camera")
+	UCameraComponent* CameraComp;
+
+	UPROPERTY(VisibleAnywhere, Category="Camera")
+	TObjectPtr<UKKC_CameraComponents> CameraComponent;
 
 public:	
 	virtual void Tick(float DeltaTime) override;

@@ -3,6 +3,7 @@
 
 #include "Characters/MainPlayer/PlayerComponents/KKC_LocomotionComponent.h"
 
+#include "Characters/MainPlayer/KKC_WolfPlayer.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
@@ -54,6 +55,7 @@ void UKKC_LocomotionComponent::SetSpringting(bool bSpring)
 
 	bIsSprinting = bSprint;
 	CMC->MaxWalkSpeed = bSprint ? MovementData->SprintSpeed : MovementData->WalkSpeed;
+	
 }
 
 void UKKC_LocomotionComponent::DrainStamina(float DeltaTime)
