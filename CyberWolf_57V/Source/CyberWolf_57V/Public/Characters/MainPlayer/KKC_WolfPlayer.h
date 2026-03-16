@@ -41,6 +41,9 @@ class CYBERWOLF_57V_API AKKC_WolfPlayer : public ACharacter
 	UPROPERTY(EditDefaultsOnly, Category="Input")
 	TObjectPtr<UInputAction> IA_Look;
 	
+	UPROPERTY(EditDefaultsOnly, Category="Input")
+	TObjectPtr<UInputAction> IA_Sprint;
+	
 
 public:
 	AKKC_WolfPlayer();

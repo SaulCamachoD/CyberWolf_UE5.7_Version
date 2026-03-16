@@ -37,29 +37,12 @@ void AKKC_WolfPlayer::BeginPlay()
 {
 	Super::BeginPlay();
 	CameraComponent->InitializeCamera(SpringArmComp, CameraComp);
+	LocomotionComp->InitializeComponent();
 }
 
 void AKKC_WolfPlayer::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-}
-
-void AKKC_WolfPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{	
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	UEnhancedInputComponent* EIC = CastChecked<UEnhancedInputComponent>(PlayerInputComponent);
-	
-	if (APlayerController* PC = Cast<APlayerController>(Controller))
-	{
-		if (UEnhancedInputLocalPlayerSubsystem* Sub = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer()))
-		{
-			Sub->AddMappingContext(InputMappingContext, 0);
-		}
-	}
-	
-	EIC -> BindAction(IA_Move, ETriggerEvent::Triggered, this, &AKKC_WolfPlayer::Move);
-	EIC -> BindAction(IA_Look, ETriggerEvent::Triggered, this, &AKKC_WolfPlayer::Look);
 
 }
 
@@ -85,9 +68,31 @@ void AKKC_WolfPlayer::StopJump(const FInputActionValue& Value)
 
 void AKKC_WolfPlayer::StartSprint(const FInputActionValue& Value)
 {
+	LocomotionComp->SetSpringting(Value.Get<bool>());
 }
 
 void AKKC_WolfPlayer::StopSprint(const FInputActionValue& Value)
 {
+	LocomotionComp->SetSpringting(Value.Get<bool>());
+}
+
+void AKKC_WolfPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{	
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	UEnhancedInputComponent* EIC = CastChecked<UEnhancedInputComponent>(PlayerInputComponent);
+	
+	if (APlayerController* PC = Cast<APlayerController>(Controller))
+	{
+		if (UEnhancedInputLocalPlayerSubsystem* Sub = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PC->GetLocalPlayer()))
+		{
+			Sub->AddMappingContext(InputMappingContext, 0);
+		}
+	}
+	
+	EIC -> BindAction(IA_Move, ETriggerEvent::Triggered, this, &AKKC_WolfPlayer::Move);
+	EIC -> BindAction(IA_Look, ETriggerEvent::Triggered, this, &AKKC_WolfPlayer::Look);
+	EIC -> BindAction(IA_Sprint, ETriggerEvent::Started, this, &AKKC_WolfPlayer::StartSprint);
+	EIC -> BindAction(IA_Sprint, ETriggerEvent::Completed, this, &AKKC_WolfPlayer::StopSprint);
+
 }
 

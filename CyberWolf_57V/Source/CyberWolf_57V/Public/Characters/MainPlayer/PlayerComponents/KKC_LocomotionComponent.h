@@ -19,12 +19,14 @@ public:
 protected:
 	virtual void BeginPlay() override;
 	
+	UPROPERTY(EditDefaultsOnly, Category="Data")
 	UKKC_MovementData* MovementData;
 	
 	bool bIsSprinting = false;
 	bool bSprint = false;
 public:	
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	void InitializeComponent() override;
 	void ProcessMoveInput(const FVector2D& Input);
 	void SetSpringting(bool bSpring);
 	void DrainStamina(float DeltaTime);
