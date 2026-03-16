@@ -1,0 +1,32 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Maps/FirstLevel.umap",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Blueprints/WolfPlayer/BP_WolfPlayer.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Blueprints/GameMode/BP_GameMModePreliminar.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Inputs/IA_Move.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Inputs/IA_Look.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Inputs/IMC_MainInputMappingContext.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Data/DA_CameraData.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/UE4_Mannequin_Mobile/Mesh/SK_Mannequin_Mobile.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/Animblueprints/WolfPlayer/ABS_Idle-Walk-Run.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/Animblueprints/WolfPlayer/AB_WolfAnimation.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/WolfPlayerAnimations/Idle_Wait_A.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/WolfPlayerAnimations/Idle_Wait_B.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/WolfPlayerAnimations/Idle_Wait_C.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/WolfPlayerAnimations/Mvm_Boost.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/WolfPlayerAnimations/Mvm_ChargeBoost.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/WolfPlayerAnimations/Mvm_ChargeDash.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/WolfPlayerAnimations/Mvm_Walk.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/WolfPlayerAnimations/Mvm_Walk_Front.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/WolfPlayerAnimations/Mvm_Walk_Root.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/WolfPlayerAnimations/Wall_BoostDash_LFwd.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/WolfPlayerAnimations/Wall_BoostDash_RFwd.uasset"
+			]
+		}
+	]
+}

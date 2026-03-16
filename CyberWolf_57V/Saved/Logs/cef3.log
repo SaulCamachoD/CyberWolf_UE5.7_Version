@@ -1,11 +1,17 @@
-[25368:11552:0221/142501.487:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
-[25368:22720:0221/142501.527:ERROR:google_update_settings.cc(265)] Failed opening key Software\Chromium to set usagestats; result: 5
-[25368:11552:0221/142501.536:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
-[24288:6096:0221/142509.081:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-4C54B254CA380D55452CA6730AE7B09A will be ignored
-[23684:32240:0221/142511.483:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[23684:32240:0221/142512.082:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[23684:32240:0221/142523.083:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[23684:32240:0221/142535.084:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[25368:11552:0221/142610.751:ERROR:device_event_log_impl.cc(196)] [14:26:10.679] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
-[25368:11552:0221/142643.846:ERROR:device_event_log_impl.cc(196)] [14:26:43.834] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
-[25368:11552:0221/142652.068:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[35380:26340:0315/203738.987:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[35380:47388:0315/203739.024:ERROR:google_update_settings.cc(265)] Failed opening key Software\Chromium to set usagestats; result: 5
+[35380:26340:0315/203739.046:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[35380:34624:0315/203741.853:WARNING:leveldb_database.cc(141)] Unable to open C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[35380:34624:0315/203741.909:WARNING:leveldb_database.cc(141)] Unable to open C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[35380:34624:0315/203741.911:WARNING:leveldb_database.cc(141)] Unable to open C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[35380:34624:0315/203741.914:WARNING:leveldb_database.cc(141)] Unable to open C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[35380:38608:0315/203742.162:WARNING:value_store_frontend.cc(47)] Reading ahfgeienlihckogmohjhadlkjgocpleb.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[35380:38608:0315/203742.165:WARNING:value_store_frontend.cc(47)] Reading mhjfbmdgcfjbbpaeojofohoefgiehjai.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[28176:2176:0315/203743.169:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-3F6C468B5E0479E14985D35A8D0F42CE will be ignored
+[23472:38336:0315/203745.174:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[23472:38336:0315/203745.845:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[35380:14280:0315/203747.625:WARNING:leveldb_database.cc(141)] Unable to open C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\GCM Store\Encryption: IO error: C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\GCM Store\Encryption/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[23472:38336:0315/203756.882:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[23472:38336:0315/203806.170:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[35380:26340:0315/211101.071:ERROR:device_event_log_impl.cc(196)] [21:11:00.953] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+[35380:26340:0315/211613.182:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
