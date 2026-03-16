@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CyberWolf_57VModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb7406fbc39f43bd66017b70d7fe2c12db076a3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c58f4185e009690ef75c7196a4554a6c14a01e28")]
 [assembly: System.Reflection.AssemblyProductAttribute("CyberWolf_57VModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CyberWolf_57VModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
