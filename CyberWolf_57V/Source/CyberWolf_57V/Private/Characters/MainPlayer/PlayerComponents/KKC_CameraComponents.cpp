@@ -15,6 +15,7 @@ void UKKC_CameraComponents::InitializeCamera(USpringArmComponent* InArm, UCamera
 	if (!CameraData) return;
 
 	SpringArm->TargetArmLength         = CameraData->ArmLengthDefault;
+	SpringArm->SocketOffset = FVector(0.f, 100.f, 0.f);
 	SpringArm->bUsePawnControlRotation = true;   // sigue el controller
 	SpringArm->bEnableCameraLag        = true;
 	SpringArm->CameraLagSpeed          = CameraData->CameraLagSpeed;

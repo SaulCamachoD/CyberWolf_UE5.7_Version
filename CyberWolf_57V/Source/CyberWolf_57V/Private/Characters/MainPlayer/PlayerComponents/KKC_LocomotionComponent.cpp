@@ -1,18 +1,12 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "Characters/MainPlayer/PlayerComponents/KKC_LocomotionComponent.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
-// Sets default values for this component's properties
 UKKC_LocomotionComponent::UKKC_LocomotionComponent()
 {
 	PrimaryComponentTick.bCanEverTick = true;
 	
 }
-
-
 
 void UKKC_LocomotionComponent::BeginPlay()
 {
@@ -25,14 +19,11 @@ void UKKC_LocomotionComponent::InitializeComponent()
 	CMC->MaxWalkSpeed = MovementData->WalkSpeed;
 }
 
-
 void UKKC_LocomotionComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 	if (bIsSprinting) DrainStamina(DeltaTime);
-	// ...
 }
-
 
 void UKKC_LocomotionComponent::ProcessMoveInput(const FVector2D& Input)
 {
@@ -46,8 +37,6 @@ void UKKC_LocomotionComponent::ProcessMoveInput(const FVector2D& Input)
 	Owner->AddMovementInput(Right,   Input.X);
 }
 
-
-
 void UKKC_LocomotionComponent::SetSpringting(bool bSpring)
 {
 	UCharacterMovementComponent* CMC = GetOwner()->GetComponentByClass<UCharacterMovementComponent>();
@@ -57,8 +46,6 @@ void UKKC_LocomotionComponent::SetSpringting(bool bSpring)
 	CMC->MaxWalkSpeed = bSpring ? MovementData->SprintSpeed : MovementData->WalkSpeed;
 	
 }
-
-
 
 void UKKC_LocomotionComponent::DrainStamina(float DeltaTime)
 {
