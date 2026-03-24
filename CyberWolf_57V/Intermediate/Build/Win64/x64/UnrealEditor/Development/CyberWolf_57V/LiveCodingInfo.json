@@ -6,10 +6,14 @@
 			"KKC_AirMovementComponent.gen.cpp.obj",
 			"KKC_CameraComponents.gen.cpp.obj",
 			"KKC_CameraData.gen.cpp.obj",
+			"KKC_CharacterStatsData.gen.cpp.obj",
 			"KKC_EnhancedInputComponent.gen.cpp.obj",
 			"KKC_FlightComponent.gen.cpp.obj",
 			"KKC_LocomotionComponent.gen.cpp.obj",
 			"KKC_MovementData.gen.cpp.obj",
+			"KKC_PlayerHud.gen.cpp.obj",
+			"KKC_PlayerStatsWidget.gen.cpp.obj",
+			"KKC_StatsComponent.gen.cpp.obj",
 			"KKC_WolfPlayer.gen.cpp.obj"
 		]
 	}

@@ -1,4 +1,6 @@
 #include "Characters/MainPlayer/PlayerComponents/KKC_LocomotionComponent.h"
+
+#include "Characters/MainPlayer/PlayerComponents/KKC_StatsComponent.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
@@ -17,15 +19,17 @@ void UKKC_LocomotionComponent::InitializeComponent()
 {	
 	UCharacterMovementComponent* CMC = GetOwner()->GetComponentByClass<UCharacterMovementComponent>();
 	CMC->MaxWalkSpeed = MovementData->WalkSpeed;
+	
 }
 
 void UKKC_LocomotionComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 	if (bIsSprinting) DrainStamina(DeltaTime);
+	if (!bIsSprinting) OnRecoveryStamina(DeltaTime);
 }
 
-void UKKC_LocomotionComponent::ProcessMoveInput(const FVector2D& Input)
+void UKKC_LocomotionComponent::ProcessMoveInput(const FVector2D& Input) const
 {
 	ACharacter* Owner = Cast<ACharacter>(GetOwner());
 
@@ -47,8 +51,23 @@ void UKKC_LocomotionComponent::SetSpringting(bool bSpring)
 	
 }
 
-void UKKC_LocomotionComponent::DrainStamina(float DeltaTime)
+void UKKC_LocomotionComponent::DrainStamina(float DeltaTime) const
 {
+	UKKC_StatsComponent* StatsComponent = GetOwner()->GetComponentByClass<UKKC_StatsComponent>();
+	if (!StatsComponent) return;
 	
+	StatsComponent->ConsumeStamina(DeltaTime * MovementData->SprintStaminaCostPerSecond);
 }
 
+void UKKC_LocomotionComponent::OnStaminaDepleted()
+{
+	SetSpringting(false);
+}
+
+void UKKC_LocomotionComponent::OnRecoveryStamina(float DeltaTime)const
+{
+	UKKC_StatsComponent* StatsComponent = GetOwner()->GetComponentByClass<UKKC_StatsComponent>();
+	if (!StatsComponent) return;
+	
+	StatsComponent->RegenerateStamina(DeltaTime * StatsComponent->StatsData->StaminaRegenPerSecond);
+}

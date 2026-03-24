@@ -27,7 +27,10 @@
 				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/WolfPlayerAnimations/Wall_BoostDash_LFwd.uasset",
 				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Animations/WolfPlayerAnimations/Wall_BoostDash_RFwd.uasset",
 				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Data/DA_MovementsData.uasset",
-				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Inputs/IA_Spring.uasset"
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Inputs/IA_Spring.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Data/DA_StatsData.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Blueprints/UI/WBP_PlayerStats.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Blueprints/UI/BP_WolfHud.uasset"
 			]
 		}
 	]

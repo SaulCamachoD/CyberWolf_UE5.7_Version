@@ -27,9 +27,16 @@ protected:
 public:	
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	void InitializeComponent() override;
-	void ProcessMoveInput(const FVector2D& Input);
+	void ProcessMoveInput(const FVector2D& Input) const;
 	void SetSpringting(bool bSpring);
-	void DrainStamina(float DeltaTime);
+	void DrainStamina(float DeltaTime) const;
+	void OnRecoveryStamina(float DeltaTime) const;
+	
+	
+	UFUNCTION()
+	void OnStaminaDepleted();
+	
+	
 
 		
 };

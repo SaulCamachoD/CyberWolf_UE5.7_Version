@@ -1,6 +1,5 @@
-2026/03/21-22:32:15.662 82a4 Reusing MANIFEST C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\Local Storage\leveldb/MANIFEST-000001
-2026/03/21-22:32:15.674 82a4 Recovering log #8
-2026/03/21-22:32:15.675 82a4 Reusing old log C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\Local Storage\leveldb/000008.log 
-2026/03/21-22:41:42.079 82e0 Level-0 table #11: started
-2026/03/21-22:41:42.084 82e0 Level-0 table #11: 63714 bytes OK
-2026/03/21-22:41:42.089 82e0 Delete type=0 #8
+2026/03/23-20:38:09.729 42d4 Reusing MANIFEST C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\Local Storage\leveldb/MANIFEST-000001
+2026/03/23-20:38:09.735 42d4 Recovering log #17
+2026/03/23-20:38:09.735 42d4 Level-0 table #20: started
+2026/03/23-20:38:09.742 42d4 Level-0 table #20: 74536 bytes OK
+2026/03/23-20:38:09.747 42d4 Delete type=0 #17

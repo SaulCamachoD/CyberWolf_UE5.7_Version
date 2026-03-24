@@ -66,10 +66,16 @@
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_LocomotionComponent.cpp">
       <Filter>Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_StatsComponent.cpp">
+      <Filter>Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents</Filter>
+    </ClCompile>
     <Filter Include="Source\CyberWolf_57V\Private\Data">
       <UniqueIdentifier>{D699029C-B8D4-39E2-9992-3CE6E02E3BE6}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Data\KKC_CameraData.cpp">
+      <Filter>Source\CyberWolf_57V\Private\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Data\KKC_CharacterStatsData.cpp">
       <Filter>Source\CyberWolf_57V\Private\Data</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Data\KKC_MovementData.cpp">
@@ -80,6 +86,15 @@
     </Filter>
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Input\KKC_EnhancedInputComponent.cpp">
       <Filter>Source\CyberWolf_57V\Private\Input</Filter>
+    </ClCompile>
+    <Filter Include="Source\CyberWolf_57V\Private\UI">
+      <UniqueIdentifier>{652C22E0-09EF-3EF4-8D1B-DB5357D2A1BC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CyberWolf_57V\Private\UI\KKCPlayerStatsWidget.cpp">
+      <Filter>Source\CyberWolf_57V\Private\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CyberWolf_57V\Private\UI\KKC_PlayerHud.cpp">
+      <Filter>Source\CyberWolf_57V\Private\UI</Filter>
     </ClCompile>
     <Filter Include="Source\CyberWolf_57V\Public">
       <UniqueIdentifier>{CDF50C77-9A15-3044-ACDA-0F291E8EC5FB}</UniqueIdentifier>
@@ -108,10 +123,16 @@
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_LocomotionComponent.h">
       <Filter>Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_StatsComponent.h">
+      <Filter>Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents</Filter>
+    </ClInclude>
     <Filter Include="Source\CyberWolf_57V\Public\Data">
       <UniqueIdentifier>{4402407F-193B-3AC7-849A-F8079B23C4FF}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Data\KKC_CameraData.h">
+      <Filter>Source\CyberWolf_57V\Public\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Data\KKC_CharacterStatsData.h">
       <Filter>Source\CyberWolf_57V\Public\Data</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Data\KKC_MovementData.h">
@@ -122,6 +143,15 @@
     </Filter>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Input\KKC_EnhancedInputComponent.h">
       <Filter>Source\CyberWolf_57V\Public\Input</Filter>
+    </ClInclude>
+    <Filter Include="Source\CyberWolf_57V\Public\UI">
+      <UniqueIdentifier>{69E6D5ED-A08D-3FB5-A3A5-ECCEF3CBD200}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\UI\KKCPlayerStatsWidget.h">
+      <Filter>Source\CyberWolf_57V\Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\UI\KKC_PlayerHud.h">
+      <Filter>Source\CyberWolf_57V\Public\UI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,8 +1,12 @@
 C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\Characters\MainPlayer\KKC_WolfPlayer.h
-C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_CameraComponents.h
 C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_AirMovementComponent.h
-C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\Data\KKC_CameraData.h
-C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_FlightComponent.h
+C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_CameraComponents.h
 C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_LocomotionComponent.h
-C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\Data\KKC_MovementData.h
+C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_StatsComponent.h
+C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\Data\KKC_CharacterStatsData.h
 C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\Input\KKC_EnhancedInputComponent.h
+C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\UI\KKC_PlayerStatsWidget.h
+C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\Data\KKC_CameraData.h
+C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\Data\KKC_MovementData.h
+C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_FlightComponent.h
+C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Source\CyberWolf_57V\Public\UI\KKC_PlayerHud.h

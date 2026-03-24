@@ -6,13 +6,14 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Input/KKC_EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "Characters/MainPlayer/PlayerComponents/KKC_StatsComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
 AKKC_WolfPlayer::AKKC_WolfPlayer()
 {
  	SpringArmComp = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
 	SpringArmComp->SetupAttachment(GetMesh());
-	SpringArmComp->SetupAttachment(GetMesh(), TEXT("head"));
+	SpringArmComp->SetupAttachment(RootComponent);
 	
 	CameraComp = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	CameraComp->SetupAttachment(SpringArmComp);
@@ -29,6 +30,7 @@ AKKC_WolfPlayer::AKKC_WolfPlayer()
 	LocomotionComp = CreateDefaultSubobject<UKKC_LocomotionComponent>(TEXT("LocomotionComp"));
 	AirMovementComp = CreateDefaultSubobject<UKKC_AirMovementComponent>(TEXT("AirMovementComp"));
 	FlightComp = CreateDefaultSubobject<UKKC_FlightComponent>(TEXT("FlightComp"));
+	StatsComp = CreateDefaultSubobject<UKKC_StatsComponent>(TEXT("StatsComp"));
 
 }
 
@@ -38,6 +40,7 @@ void AKKC_WolfPlayer::BeginPlay()
 	Super::BeginPlay();
 	CameraComponent->InitializeCamera(SpringArmComp, CameraComp);
 	LocomotionComp->InitializeComponent();
+	StatsComp->OnStaminaDepleted.AddDynamic(LocomotionComp, &UKKC_LocomotionComponent::OnStaminaDepleted);
 }
 
 void AKKC_WolfPlayer::Tick(float DeltaTime)

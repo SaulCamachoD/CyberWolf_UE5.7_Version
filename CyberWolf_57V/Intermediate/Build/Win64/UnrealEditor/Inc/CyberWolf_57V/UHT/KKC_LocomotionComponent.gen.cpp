@@ -19,6 +19,41 @@ ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 UPackage* Z_Construct_UPackage__Script_CyberWolf_57V();
 // ********** End Cross Module References **********************************************************
 
+// ********** Begin Class UKKC_LocomotionComponent Function OnStaminaDepleted **********************
+struct Z_Construct_UFunction_UKKC_LocomotionComponent_OnStaminaDepleted_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Characters/MainPlayer/PlayerComponents/KKC_LocomotionComponent.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin Function OnStaminaDepleted constinit property declarations *********************
+// ********** End Function OnStaminaDepleted constinit property declarations ***********************
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UKKC_LocomotionComponent_OnStaminaDepleted_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UKKC_LocomotionComponent, nullptr, "OnStaminaDepleted", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UKKC_LocomotionComponent_OnStaminaDepleted_Statics::Function_MetaDataParams), Z_Construct_UFunction_UKKC_LocomotionComponent_OnStaminaDepleted_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_UKKC_LocomotionComponent_OnStaminaDepleted()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UKKC_LocomotionComponent_OnStaminaDepleted_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UKKC_LocomotionComponent::execOnStaminaDepleted)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnStaminaDepleted();
+	P_NATIVE_END;
+}
+// ********** End Class UKKC_LocomotionComponent Function OnStaminaDepleted ************************
+
 // ********** Begin Class UKKC_LocomotionComponent *************************************************
 FClassRegistrationInfo Z_Registration_Info_UClass_UKKC_LocomotionComponent;
 UClass* UKKC_LocomotionComponent::GetPrivateStaticClass()
@@ -68,7 +103,14 @@ struct Z_Construct_UClass_UKKC_LocomotionComponent_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MovementData;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class UKKC_LocomotionComponent constinit property declarations *******************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OnStaminaDepleted"), .Pointer = &UKKC_LocomotionComponent::execOnStaminaDepleted },
+	};
 	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UKKC_LocomotionComponent_OnStaminaDepleted, "OnStaminaDepleted" }, // 3859988090
+	};
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UKKC_LocomotionComponent>::IsAbstract,
 	};
@@ -92,11 +134,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UKKC_LocomotionComponen
 	"Engine",
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
-	nullptr,
+	FuncInfo,
 	Z_Construct_UClass_UKKC_LocomotionComponent_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
-	0,
+	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_UKKC_LocomotionComponent_Statics::PropPointers),
 	0,
 	0x00B000A4u,
@@ -104,6 +146,8 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UKKC_LocomotionComponen
 };
 void UKKC_LocomotionComponent::StaticRegisterNativesUKKC_LocomotionComponent()
 {
+	UClass* Class = UKKC_LocomotionComponent::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UKKC_LocomotionComponent_Statics::Funcs));
 }
 UClass* Z_Construct_UClass_UKKC_LocomotionComponent()
 {
@@ -121,10 +165,10 @@ UKKC_LocomotionComponent::~UKKC_LocomotionComponent() {}
 struct Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UKKC_LocomotionComponent, UKKC_LocomotionComponent::StaticClass, TEXT("UKKC_LocomotionComponent"), &Z_Registration_Info_UClass_UKKC_LocomotionComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_LocomotionComponent), 3599453109U) },
+		{ Z_Construct_UClass_UKKC_LocomotionComponent, UKKC_LocomotionComponent::StaticClass, TEXT("UKKC_LocomotionComponent"), &Z_Registration_Info_UClass_UKKC_LocomotionComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_LocomotionComponent), 1851700734U) },
 	};
 }; // Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_1016517984{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_738210088{
 	TEXT("/Script/CyberWolf_57V"),
 	Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_Statics::ClassInfo),
 	nullptr, 0,

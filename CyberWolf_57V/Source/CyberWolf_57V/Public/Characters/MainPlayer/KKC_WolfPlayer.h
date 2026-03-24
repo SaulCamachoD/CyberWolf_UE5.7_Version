@@ -10,6 +10,7 @@
 #include "KKC_WolfPlayer.generated.h"
 
 
+class UKKC_StatsComponent;
 class UKKC_CameraComponents;
 class UInputMappingContext;
 class UInputAction;
@@ -23,14 +24,7 @@ class CYBERWOLF_57V_API AKKC_WolfPlayer : public ACharacter
 {
 	GENERATED_BODY()
 	
-	UPROPERTY(VisibleAnywhere, Category="Components")
-	TObjectPtr<UKKC_LocomotionComponent> LocomotionComp;
-
-	UPROPERTY(VisibleAnywhere, Category="Components")
-	TObjectPtr<UKKC_AirMovementComponent> AirMovementComp;
-
-	UPROPERTY(VisibleAnywhere, Category="Components")  
-	TObjectPtr<UKKC_FlightComponent> FlightComp;
+	
 
 	UPROPERTY(EditDefaultsOnly, Category="Input")
 	TObjectPtr<UInputMappingContext> InputMappingContext;
@@ -58,6 +52,18 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, Category="Camera")
 	TObjectPtr<UKKC_CameraComponents> CameraComponent;
+	
+	UPROPERTY(VisibleAnywhere, Category="Components")
+	TObjectPtr<UKKC_LocomotionComponent> LocomotionComp;
+
+	UPROPERTY(VisibleAnywhere, Category="Components")
+	TObjectPtr<UKKC_AirMovementComponent> AirMovementComp;
+
+	UPROPERTY(VisibleAnywhere, Category="Components")  
+	TObjectPtr<UKKC_FlightComponent> FlightComp;
+	
+	UPROPERTY(VisibleAnywhere, Category="Components")
+	TObjectPtr<UKKC_StatsComponent> StatsComp;
 
 public:	
 	virtual void Tick(float DeltaTime) override;
