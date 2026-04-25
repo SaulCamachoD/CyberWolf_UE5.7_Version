@@ -7,6 +7,7 @@
 #include "PlayerComponents/KKC_LocomotionComponent.h"
 #include "PlayerComponents/KKC_AirMovementComponent.h"
 #include "PlayerComponents/KKC_FlightComponent.h"
+#include "PlayerComponents/KKC_UInventoryComponent.h"
 #include "KKC_WolfPlayer.generated.h"
 
 
@@ -55,6 +56,9 @@ protected:
 	
 	UPROPERTY(VisibleAnywhere, Category="Components")
 	TObjectPtr<UKKC_LocomotionComponent> LocomotionComp;
+	
+	UPROPERTY(VisibleAnywhere, Category="Components")
+	TObjectPtr<UKKC_UInventoryComponent> InventoryComp;
 
 	UPROPERTY(VisibleAnywhere, Category="Components")
 	TObjectPtr<UKKC_AirMovementComponent> AirMovementComp;

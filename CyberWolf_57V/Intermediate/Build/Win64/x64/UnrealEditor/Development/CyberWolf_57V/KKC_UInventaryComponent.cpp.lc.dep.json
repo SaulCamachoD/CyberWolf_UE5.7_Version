@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\source\\cyberwolf_57v\\private\\characters\\mainplayer\\playercomponents\\kkc_uinventarycomponent.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\x64\\cyberwolf_57veditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cyberwolf_57v\\definitions.cyberwolf_57v.h",
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\source\\cyberwolf_57v\\public\\characters\\mainplayer\\playercomponents\\kkc_uinventarycomponent.h",
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\unrealeditor\\inc\\cyberwolf_57v\\uht\\kkc_uinventarycomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\source\\cyberwolf_57v\\private\\data\\kkc_itemdata.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\x64\\cyberwolf_57veditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\cyberwolf_57v\\definitions.cyberwolf_57v.h",
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\source\\cyberwolf_57v\\public\\data\\kkc_itemdata.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\gameplaytags\\classes\\gameplaytagcontainer.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\core\\public\\misc\\comparisonutility.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplaytags\\uht\\gameplaytagcontainer.generated.h",
+            "c:\\unrealenginegames\\cyberwolf_ue5.7_version\\cyberwolf_57v\\intermediate\\build\\win64\\unrealeditor\\inc\\cyberwolf_57v\\uht\\kkc_itemdata.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -30,7 +30,10 @@
 				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Inputs/IA_Spring.uasset",
 				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Data/DA_StatsData.uasset",
 				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Blueprints/UI/WBP_PlayerStats.uasset",
-				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Blueprints/UI/BP_WolfHud.uasset"
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Blueprints/UI/BP_WolfHud.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Data/Items/DA_BasicPotion.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Data/Items/DA_Jetpack_MarkI.uasset",
+				"C:/UnrealEngineGames/CyberWolf_UE5.7_Version/CyberWolf_57V/Content/Data/Items/DA_NeuralImplan_Basic.uasset"
 			]
 		}
 	]

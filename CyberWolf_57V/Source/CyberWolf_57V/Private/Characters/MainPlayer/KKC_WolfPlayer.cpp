@@ -28,6 +28,7 @@ AKKC_WolfPlayer::AKKC_WolfPlayer()
 	CameraComp->bUsePawnControlRotation = false;
 	
 	LocomotionComp = CreateDefaultSubobject<UKKC_LocomotionComponent>(TEXT("LocomotionComp"));
+	InventoryComp = CreateDefaultSubobject<UKKC_UInventoryComponent>(TEXT("InventoryComp"));
 	AirMovementComp = CreateDefaultSubobject<UKKC_AirMovementComponent>(TEXT("AirMovementComp"));
 	FlightComp = CreateDefaultSubobject<UKKC_FlightComponent>(TEXT("FlightComp"));
 	StatsComp = CreateDefaultSubobject<UKKC_StatsComponent>(TEXT("StatsComp"));
