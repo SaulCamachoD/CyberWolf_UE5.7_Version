@@ -1,0 +1,9 @@
+[42740:43036:0428/215651.138:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[42740:28244:0428/215651.211:ERROR:google_update_settings.cc(265)] Failed opening key Software\Chromium to set usagestats; result: 5
+[42740:43036:0428/215651.292:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[30656:30544:0428/215655.897:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-08AC943FCAED928A2111382714675FC9 will be ignored
+[42740:34552:0428/215658.013:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[42740:43036:0428/215730.475:ERROR:device_event_log_impl.cc(196)] [21:57:30.455] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+[42740:43036:0428/215738.637:ERROR:device_event_log_impl.cc(196)] [21:57:38.633] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+[42740:43036:0428/215830.237:ERROR:device_event_log_impl.cc(196)] [21:58:30.206] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+[16012:2512:0428/215846.957:ERROR:command_buffer_proxy_impl.cc(132)] ContextResult::kTransientFailure: Failed to send GpuControl.CreateCommandBuffer.

@@ -1,3 +1,33 @@
-2026/04/25-17:43:42.057 ae68 Reusing MANIFEST C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\Local Storage\leveldb/MANIFEST-000001
-2026/04/25-17:43:42.062 ae68 Recovering log #37
-2026/04/25-17:43:42.064 ae68 Reusing old log C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\Local Storage\leveldb/000037.log 
+2026/05/02-12:07:58.255 a00c Reusing MANIFEST C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\Local Storage\leveldb/MANIFEST-000001
+2026/05/02-12:07:58.269 a00c Recovering log #3
+2026/05/02-12:07:58.271 a00c Reusing old log C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\Local Storage\leveldb/000003.log 
+2026/05/02-12:21:59.774 2464 Level-0 table #5: started
+2026/05/02-12:21:59.784 2464 Level-0 table #5: 77178 bytes OK
+2026/05/02-12:21:59.792 2464 Delete type=0 #3
+2026/05/02-12:26:31.737 2464 Level-0 table #7: started
+2026/05/02-12:26:31.744 2464 Level-0 table #7: 72294 bytes OK
+2026/05/02-12:26:31.750 2464 Delete type=0 #4
+2026/05/02-12:27:07.480 2464 Level-0 table #9: started
+2026/05/02-12:27:07.489 2464 Level-0 table #9: 72486 bytes OK
+2026/05/02-12:27:07.494 2464 Delete type=0 #6
+2026/05/02-12:29:07.487 2464 Level-0 table #11: started
+2026/05/02-12:29:07.496 2464 Level-0 table #11: 71294 bytes OK
+2026/05/02-12:29:07.501 2464 Delete type=0 #8
+2026/05/02-12:32:07.486 2464 Level-0 table #13: started
+2026/05/02-12:32:07.493 2464 Level-0 table #13: 73302 bytes OK
+2026/05/02-12:32:07.498 2464 Delete type=0 #10
+2026/05/02-12:35:07.480 2464 Level-0 table #15: started
+2026/05/02-12:35:07.486 2464 Level-0 table #15: 75482 bytes OK
+2026/05/02-12:35:07.490 2464 Delete type=0 #12
+2026/05/02-12:35:07.491 2464 Compacting 4@0 + 1@1 files
+2026/05/02-12:35:07.500 2464 Generated table #16@0: 4 keys, 25688 bytes
+2026/05/02-12:35:07.500 2464 Compacted 4@0 + 1@1 files => 25688 bytes
+2026/05/02-12:35:07.502 2464 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/05/02-12:35:07.502 2464 Delete type=2 #7
+2026/05/02-12:35:07.503 2464 Delete type=2 #9
+2026/05/02-12:35:07.503 2464 Delete type=2 #11
+2026/05/02-12:35:07.503 2464 Delete type=2 #13
+2026/05/02-12:35:07.503 2464 Delete type=2 #15
+2026/05/02-12:37:25.717 2464 Level-0 table #18: started
+2026/05/02-12:37:25.735 2464 Level-0 table #18: 78298 bytes OK
+2026/05/02-12:37:25.741 2464 Delete type=0 #14

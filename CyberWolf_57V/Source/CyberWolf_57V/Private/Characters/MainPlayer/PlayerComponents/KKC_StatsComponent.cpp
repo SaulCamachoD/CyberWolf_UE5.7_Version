@@ -2,16 +2,44 @@
 
 
 #include "Characters/MainPlayer/PlayerComponents/KKC_StatsComponent.h"
+#include "Characters/MainPlayer/PlayerComponents/KKC_UInventoryComponent.h"
+
+
+void UKKC_StatsComponent::InitializeComponent()
+{
+	Super::InitializeComponent();
+	
+	InventoryComponent = GetOwner()->FindComponentByClass<UKKC_UInventoryComponent>();
+	
+}
 
 
 void UKKC_StatsComponent::BeginPlay()
 {
 	Super::BeginPlay();
+    
+	UE_LOG(LogTemp, Warning, TEXT("=== STATS COMPONENT BEGIN PLAY ==="));
+	UE_LOG(LogTemp, Warning, TEXT("Owner: %s"), *GetOwner()->GetName());
+	UE_LOG(LogTemp, Warning, TEXT("InventoryComponent: %s"), 
+		InventoryComponent ? TEXT("VALIDO") : TEXT("NULLPTR"));
+	UE_LOG(LogTemp, Warning, TEXT("StatsData: %s"), 
+		StatsData ? TEXT("VALIDO") : TEXT("NULLPTR"));
+    
 	if (!StatsData) return;
-	
+    
 	CurrentHealth.Current = CurrentHealth.Max = StatsData->MaxHealth;
 	Stamina.Current = Stamina.Max = StatsData->MaxStamina;
 	Energy.Current = Energy.Max = StatsData->MaxEnergy;
+
+	if (InventoryComponent)
+	{
+		InventoryComponent->OnItemEquipped.AddDynamic(this, &UKKC_StatsComponent::addStat);
+		UE_LOG(LogTemp, Warning, TEXT(">>> Suscrito a OnItemEquipped <<<"));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT(">>> NO SE PUDO SUSCRIBIR: InventoryComponent es nullptr <<<"));
+	}
 }
 
 
@@ -22,8 +50,19 @@ void UKKC_StatsComponent::TickComponent(float DeltaTime, ELevelTick TickType, FA
 	if (!StatsData || CurrentHealth.bIsDead)return;
 }
 
-UKKC_StatsComponent::UKKC_StatsComponent()
+void UKKC_StatsComponent::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
+	Super::EndPlay(EndPlayReason);
+	
+	if (InventoryComponent)
+	{
+		InventoryComponent->OnItemEquipped.RemoveDynamic(this, &UKKC_StatsComponent::addStat);
+	}
+}
+
+UKKC_StatsComponent::UKKC_StatsComponent()
+{	
+	bWantsInitializeComponent = true;
 	PrimaryComponentTick.bCanEverTick = true;
 }
 
@@ -101,4 +140,15 @@ void UKKC_StatsComponent::BroadcastStaminaChanged()
 {
 	OnStaminaChanged.Broadcast(Stamina.Current, Stamina.Max);
 }
+
+void UKKC_StatsComponent::RemoveStat(UKKC_ItemData* Item)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Remove Stat"))
+}
+
+void UKKC_StatsComponent::addStat(UKKC_ItemData* Item)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Add Stat"))
+}
+
 

@@ -13,8 +13,10 @@ void EmptyLinkFunctionForGeneratedCodeKKC_StatsComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_CharacterStatsData_NoRegister();
+CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_ItemData_NoRegister();
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_StatsComponent();
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_StatsComponent_NoRegister();
+CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_UInventoryComponent_NoRegister();
 CYBERWOLF_57V_API UFunction* Z_Construct_UDelegateFunction_CyberWolf_57V_OnDeath__DelegateSignature();
 CYBERWOLF_57V_API UFunction* Z_Construct_UDelegateFunction_CyberWolf_57V_OnHealthChanged__DelegateSignature();
 CYBERWOLF_57V_API UFunction* Z_Construct_UDelegateFunction_CyberWolf_57V_OnStaminaChanged__DelegateSignature();
@@ -451,6 +453,57 @@ UScriptStruct* Z_Construct_UScriptStruct_FEnergyStat()
 }
 // ********** End ScriptStruct FEnergyStat *********************************************************
 
+// ********** Begin Class UKKC_StatsComponent Function addStat *************************************
+struct Z_Construct_UFunction_UKKC_StatsComponent_addStat_Statics
+{
+	struct KKC_StatsComponent_eventaddStat_Parms
+	{
+		UKKC_ItemData* Item;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Characters/MainPlayer/PlayerComponents/KKC_StatsComponent.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin Function addStat constinit property declarations *******************************
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_Item;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function addStat constinit property declarations *********************************
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+
+// ********** Begin Function addStat Property Definitions ******************************************
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UKKC_StatsComponent_addStat_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(KKC_StatsComponent_eventaddStat_Parms, Item), Z_Construct_UClass_UKKC_ItemData_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UKKC_StatsComponent_addStat_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UKKC_StatsComponent_addStat_Statics::NewProp_Item,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UKKC_StatsComponent_addStat_Statics::PropPointers) < 2048);
+// ********** End Function addStat Property Definitions ********************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UKKC_StatsComponent_addStat_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UKKC_StatsComponent, nullptr, "addStat", 	Z_Construct_UFunction_UKKC_StatsComponent_addStat_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UKKC_StatsComponent_addStat_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UKKC_StatsComponent_addStat_Statics::KKC_StatsComponent_eventaddStat_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UKKC_StatsComponent_addStat_Statics::Function_MetaDataParams), Z_Construct_UFunction_UKKC_StatsComponent_addStat_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UKKC_StatsComponent_addStat_Statics::KKC_StatsComponent_eventaddStat_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UKKC_StatsComponent_addStat()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UKKC_StatsComponent_addStat_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UKKC_StatsComponent::execaddStat)
+{
+	P_GET_OBJECT(UKKC_ItemData,Z_Param_Item);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->addStat(Z_Param_Item);
+	P_NATIVE_END;
+}
+// ********** End Class UKKC_StatsComponent Function addStat ***************************************
+
 // ********** Begin Class UKKC_StatsComponent Function ConsumeStamina ******************************
 struct Z_Construct_UFunction_UKKC_StatsComponent_ConsumeStamina_Statics
 {
@@ -778,6 +831,57 @@ DEFINE_FUNCTION(UKKC_StatsComponent::execIsDead)
 }
 // ********** End Class UKKC_StatsComponent Function IsDead ****************************************
 
+// ********** Begin Class UKKC_StatsComponent Function RemoveStat **********************************
+struct Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat_Statics
+{
+	struct KKC_StatsComponent_eventRemoveStat_Parms
+	{
+		UKKC_ItemData* Item;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Characters/MainPlayer/PlayerComponents/KKC_StatsComponent.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin Function RemoveStat constinit property declarations ****************************
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_Item;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function RemoveStat constinit property declarations ******************************
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+
+// ********** Begin Function RemoveStat Property Definitions ***************************************
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat_Statics::NewProp_Item = { "Item", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(KKC_StatsComponent_eventRemoveStat_Parms, Item), Z_Construct_UClass_UKKC_ItemData_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat_Statics::NewProp_Item,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat_Statics::PropPointers) < 2048);
+// ********** End Function RemoveStat Property Definitions *****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UKKC_StatsComponent, nullptr, "RemoveStat", 	Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat_Statics::KKC_StatsComponent_eventRemoveStat_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat_Statics::Function_MetaDataParams), Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat_Statics::KKC_StatsComponent_eventRemoveStat_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UKKC_StatsComponent::execRemoveStat)
+{
+	P_GET_OBJECT(UKKC_ItemData,Z_Param_Item);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->RemoveStat(Z_Param_Item);
+	P_NATIVE_END;
+}
+// ********** End Class UKKC_StatsComponent Function RemoveStat ************************************
+
 // ********** Begin Class UKKC_StatsComponent Function TakeDamage **********************************
 struct Z_Construct_UFunction_UKKC_StatsComponent_TakeDamage_Statics
 {
@@ -890,6 +994,10 @@ struct Z_Construct_UClass_UKKC_StatsComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnStaminaDepleted_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Characters/MainPlayer/PlayerComponents/KKC_StatsComponent.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InventoryComponent_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Characters/MainPlayer/PlayerComponents/KKC_StatsComponent.h" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Class UKKC_StatsComponent constinit property declarations **********************
@@ -898,25 +1006,30 @@ struct Z_Construct_UClass_UKKC_StatsComponent_Statics
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnStaminaChanged;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnDeath;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnStaminaDepleted;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InventoryComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class UKKC_StatsComponent constinit property declarations ************************
 	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("addStat"), .Pointer = &UKKC_StatsComponent::execaddStat },
 		{ .NameUTF8 = UTF8TEXT("ConsumeStamina"), .Pointer = &UKKC_StatsComponent::execConsumeStamina },
 		{ .NameUTF8 = UTF8TEXT("Depleted"), .Pointer = &UKKC_StatsComponent::execDepleted },
 		{ .NameUTF8 = UTF8TEXT("GetHealthPercent"), .Pointer = &UKKC_StatsComponent::execGetHealthPercent },
 		{ .NameUTF8 = UTF8TEXT("GetStaminaPercent"), .Pointer = &UKKC_StatsComponent::execGetStaminaPercent },
 		{ .NameUTF8 = UTF8TEXT("Health"), .Pointer = &UKKC_StatsComponent::execHealth },
 		{ .NameUTF8 = UTF8TEXT("IsDead"), .Pointer = &UKKC_StatsComponent::execIsDead },
+		{ .NameUTF8 = UTF8TEXT("RemoveStat"), .Pointer = &UKKC_StatsComponent::execRemoveStat },
 		{ .NameUTF8 = UTF8TEXT("TakeDamage"), .Pointer = &UKKC_StatsComponent::execTakeDamage },
 	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UKKC_StatsComponent_addStat, "addStat" }, // 2167124828
 		{ &Z_Construct_UFunction_UKKC_StatsComponent_ConsumeStamina, "ConsumeStamina" }, // 903320106
 		{ &Z_Construct_UFunction_UKKC_StatsComponent_Depleted, "Depleted" }, // 2513689313
 		{ &Z_Construct_UFunction_UKKC_StatsComponent_GetHealthPercent, "GetHealthPercent" }, // 4240512521
 		{ &Z_Construct_UFunction_UKKC_StatsComponent_GetStaminaPercent, "GetStaminaPercent" }, // 2454592903
 		{ &Z_Construct_UFunction_UKKC_StatsComponent_Health, "Health" }, // 1326408783
 		{ &Z_Construct_UFunction_UKKC_StatsComponent_IsDead, "IsDead" }, // 3162578311
+		{ &Z_Construct_UFunction_UKKC_StatsComponent_RemoveStat, "RemoveStat" }, // 1032862290
 		{ &Z_Construct_UFunction_UKKC_StatsComponent_TakeDamage, "TakeDamage" }, // 1499267924
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -932,12 +1045,14 @@ const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UKK
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UKKC_StatsComponent_Statics::NewProp_OnStaminaChanged = { "OnStaminaChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_StatsComponent, OnStaminaChanged), Z_Construct_UDelegateFunction_CyberWolf_57V_OnStaminaChanged__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnStaminaChanged_MetaData), NewProp_OnStaminaChanged_MetaData) }; // 654233149
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UKKC_StatsComponent_Statics::NewProp_OnDeath = { "OnDeath", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_StatsComponent, OnDeath), Z_Construct_UDelegateFunction_CyberWolf_57V_OnDeath__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnDeath_MetaData), NewProp_OnDeath_MetaData) }; // 3785674933
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UKKC_StatsComponent_Statics::NewProp_OnStaminaDepleted = { "OnStaminaDepleted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_StatsComponent, OnStaminaDepleted), Z_Construct_UDelegateFunction_CyberWolf_57V_OnStaminaDepleted__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnStaminaDepleted_MetaData), NewProp_OnStaminaDepleted_MetaData) }; // 1834878842
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UKKC_StatsComponent_Statics::NewProp_InventoryComponent = { "InventoryComponent", nullptr, (EPropertyFlags)0x0040000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_StatsComponent, InventoryComponent), Z_Construct_UClass_UKKC_UInventoryComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InventoryComponent_MetaData), NewProp_InventoryComponent_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UKKC_StatsComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_StatsComponent_Statics::NewProp_StatsData,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_StatsComponent_Statics::NewProp_OnHealthChanged,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_StatsComponent_Statics::NewProp_OnStaminaChanged,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_StatsComponent_Statics::NewProp_OnDeath,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_StatsComponent_Statics::NewProp_OnStaminaDepleted,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_StatsComponent_Statics::NewProp_InventoryComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UKKC_StatsComponent_Statics::PropPointers) < 2048);
 // ********** End Class UKKC_StatsComponent Property Definitions ***********************************
@@ -987,10 +1102,10 @@ struct Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_Cyber
 		{ FEnergyStat::StaticStruct, Z_Construct_UScriptStruct_FEnergyStat_Statics::NewStructOps, TEXT("EnergyStat"),&Z_Registration_Info_UScriptStruct_FEnergyStat, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FEnergyStat), 2762683418U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UKKC_StatsComponent, UKKC_StatsComponent::StaticClass, TEXT("UKKC_StatsComponent"), &Z_Registration_Info_UClass_UKKC_StatsComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_StatsComponent), 2590727515U) },
+		{ Z_Construct_UClass_UKKC_StatsComponent, UKKC_StatsComponent::StaticClass, TEXT("UKKC_StatsComponent"), &Z_Registration_Info_UClass_UKKC_StatsComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_StatsComponent), 3199559620U) },
 	};
 }; // Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_StatsComponent_h__Script_CyberWolf_57V_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_StatsComponent_h__Script_CyberWolf_57V_2561976306{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_StatsComponent_h__Script_CyberWolf_57V_3488861867{
 	TEXT("/Script/CyberWolf_57V"),
 	Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_StatsComponent_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_StatsComponent_h__Script_CyberWolf_57V_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_StatsComponent_h__Script_CyberWolf_57V_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_StatsComponent_h__Script_CyberWolf_57V_Statics::ScriptStructInfo),

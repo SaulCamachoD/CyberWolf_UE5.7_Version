@@ -443,6 +443,9 @@ struct Z_Construct_UClass_UKKC_UInventoryComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnItemUnEquipped_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Characters/MainPlayer/PlayerComponents/KKC_UInventoryComponent.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ItemTest_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Characters/MainPlayer/PlayerComponents/KKC_UInventoryComponent.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Bag_MetaData[] = {
 		{ "Category", "Bag" },
 		{ "ModuleRelativePath", "Public/Characters/MainPlayer/PlayerComponents/KKC_UInventoryComponent.h" },
@@ -456,6 +459,7 @@ struct Z_Construct_UClass_UKKC_UInventoryComponent_Statics
 // ********** Begin Class UKKC_UInventoryComponent constinit property declarations *****************
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnItemEquipped;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnItemUnEquipped;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ItemTest;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Bag_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Bag;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_EquippedItems_ValueProp;
@@ -489,6 +493,7 @@ struct Z_Construct_UClass_UKKC_UInventoryComponent_Statics
 // ********** Begin Class UKKC_UInventoryComponent Property Definitions ****************************
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UKKC_UInventoryComponent_Statics::NewProp_OnItemEquipped = { "OnItemEquipped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_UInventoryComponent, OnItemEquipped), Z_Construct_UDelegateFunction_CyberWolf_57V_OnItemEquipped__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnItemEquipped_MetaData), NewProp_OnItemEquipped_MetaData) }; // 2138831506
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UKKC_UInventoryComponent_Statics::NewProp_OnItemUnEquipped = { "OnItemUnEquipped", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_UInventoryComponent, OnItemUnEquipped), Z_Construct_UDelegateFunction_CyberWolf_57V_OnItemUnEquipped__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnItemUnEquipped_MetaData), NewProp_OnItemUnEquipped_MetaData) }; // 520874469
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UKKC_UInventoryComponent_Statics::NewProp_ItemTest = { "ItemTest", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_UInventoryComponent, ItemTest), Z_Construct_UClass_UKKC_ItemData_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ItemTest_MetaData), NewProp_ItemTest_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UKKC_UInventoryComponent_Statics::NewProp_Bag_Inner = { "Bag", nullptr, (EPropertyFlags)0x0000000000020000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UKKC_ItemData_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UKKC_UInventoryComponent_Statics::NewProp_Bag = { "Bag", nullptr, (EPropertyFlags)0x0020080000020815, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_UInventoryComponent, Bag), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Bag_MetaData), NewProp_Bag_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UKKC_UInventoryComponent_Statics::NewProp_EquippedItems_ValueProp = { "EquippedItems", nullptr, (EPropertyFlags)0x0000000000020001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UClass_UKKC_ItemData_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -498,6 +503,7 @@ const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_UKKC_UInventoryCo
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UKKC_UInventoryComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_UInventoryComponent_Statics::NewProp_OnItemEquipped,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_UInventoryComponent_Statics::NewProp_OnItemUnEquipped,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_UInventoryComponent_Statics::NewProp_ItemTest,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_UInventoryComponent_Statics::NewProp_Bag_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_UInventoryComponent_Statics::NewProp_Bag,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_UInventoryComponent_Statics::NewProp_EquippedItems_ValueProp,
@@ -548,10 +554,10 @@ UKKC_UInventoryComponent::~UKKC_UInventoryComponent() {}
 struct Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_UInventoryComponent_h__Script_CyberWolf_57V_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UKKC_UInventoryComponent, UKKC_UInventoryComponent::StaticClass, TEXT("UKKC_UInventoryComponent"), &Z_Registration_Info_UClass_UKKC_UInventoryComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_UInventoryComponent), 63414971U) },
+		{ Z_Construct_UClass_UKKC_UInventoryComponent, UKKC_UInventoryComponent::StaticClass, TEXT("UKKC_UInventoryComponent"), &Z_Registration_Info_UClass_UKKC_UInventoryComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_UInventoryComponent), 1545834184U) },
 	};
 }; // Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_UInventoryComponent_h__Script_CyberWolf_57V_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_UInventoryComponent_h__Script_CyberWolf_57V_3954820719{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_UInventoryComponent_h__Script_CyberWolf_57V_2907725221{
 	TEXT("/Script/CyberWolf_57V"),
 	Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_UInventoryComponent_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_UInventoryComponent_h__Script_CyberWolf_57V_Statics::ClassInfo),
 	nullptr, 0,

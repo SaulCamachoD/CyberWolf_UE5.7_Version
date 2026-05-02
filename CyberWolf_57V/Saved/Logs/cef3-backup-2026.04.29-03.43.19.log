@@ -1,0 +1,6 @@
+[8892:6004:0428/224258.183:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[8892:29292:0428/224258.233:ERROR:google_update_settings.cc(265)] Failed opening key Software\Chromium to set usagestats; result: 5
+[8892:6004:0428/224258.250:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[22252:17100:0428/224302.053:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-C1DFAE7C583615ACD7122B1AA275D276 will be ignored
+[8892:18980:0428/224304.832:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[8892:6004:0428/224319.564:ERROR:device_event_log_impl.cc(196)] [22:43:19.554] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)

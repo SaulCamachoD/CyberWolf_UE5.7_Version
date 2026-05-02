@@ -7,6 +7,7 @@
 #include "Data/KKC_CharacterStatsData.h"
 #include "KKC_StatsComponent.generated.h"
 
+class UKKC_UInventoryComponent;
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnHealthChanged, float, Current, float, Max);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnStaminaChanged, float, Current, float, Max);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDeath);
@@ -80,7 +81,9 @@ public:
 	UFUNCTION(BlueprintPure) bool Depleted() const { return Stamina.bDepleted; }
 	
 	virtual void BeginPlay() override;
+	virtual void InitializeComponent() override;
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,FActorComponentTickFunction* ThisTickFunction) override;
+	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
 	
 	
 private:
@@ -89,11 +92,22 @@ private:
 	FStaminaStat Stamina;
 	FEnergyStat Energy;
 	
+	UPROPERTY()
+	UKKC_UInventoryComponent* InventoryComponent;
+	
 
 	float TimeSinceStaminaConsumed = 0.f;
 		
 	
 	void BroadcastHealthChanged();
 	void BroadcastStaminaChanged();
+	
+protected:
+	
+	UFUNCTION()
+	void RemoveStat(UKKC_ItemData* Item);
+	
+	UFUNCTION()
+	void addStat(UKKC_ItemData* Item);
 	
 };

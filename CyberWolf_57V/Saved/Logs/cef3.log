@@ -1,12 +1,40 @@
-[33272:13812:0425/174341.946:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
-[33272:19704:0425/174341.992:ERROR:google_update_settings.cc(265)] Failed opening key Software\Chromium to set usagestats; result: 5
-[33272:13812:0425/174342.009:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
-[33272:13880:0425/174344.748:WARNING:leveldb_database.cc(141)] Unable to open C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[33272:13880:0425/174344.751:WARNING:leveldb_database.cc(141)] Unable to open C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[33272:13880:0425/174344.754:WARNING:leveldb_database.cc(141)] Unable to open C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[33272:13880:0425/174344.756:WARNING:leveldb_database.cc(141)] Unable to open C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[33272:26828:0425/174345.055:WARNING:value_store_frontend.cc(47)] Reading ahfgeienlihckogmohjhadlkjgocpleb.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[33272:26828:0425/174345.057:WARNING:value_store_frontend.cc(47)] Reading mhjfbmdgcfjbbpaeojofohoefgiehjai.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
-[35740:34196:0425/174345.811:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-A88A81B3F1D794E84F22B2260361C412 will be ignored
-[33272:17160:0425/174348.589:ERROR:cast_crl.cc(443)] CRL - Verification failed.
-[33272:32780:0425/174349.523:WARNING:leveldb_database.cc(141)] Unable to open C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\GCM Store\Encryption: IO error: C:\UnrealEngineGames\CyberWolf_UE5.7_Version\CyberWolf_57V\Saved\webcache_6613\Default\GCM Store\Encryption/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[6272:21140:0502/120757.281:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[6272:40928:0502/120757.950:ERROR:google_update_settings.cc(265)] Failed opening key Software\Chromium to set usagestats; result: 5
+[6272:21140:0502/120758.177:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[44712:42092:0502/120813.086:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-F573E7EA72A83947D1683811DC4F5BF7 will be ignored
+[6272:15824:0502/120813.192:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[19636:11736:0502/121707.521:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 9-3C78CFFB43066E92CAB2231CF69F4663 will be ignored
+[6272:21140:0502/121759.784:ERROR:device_event_log_impl.cc(196)] [12:17:59.488] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+[6272:21140:0502/122158.419:ERROR:device_event_log_impl.cc(196)] [12:21:58.372] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+[6272:21140:0502/122630.720:ERROR:device_event_log_impl.cc(196)] [12:26:30.685] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+[39316:31552:0502/122715.683:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame D-E3248C45DDE9FFE3BFC27A3D0D9F3CED will be ignored
+[6272:21140:0502/122719.998:ERROR:device_event_log_impl.cc(196)] [12:27:19.973] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+[44196:17132:0502/122818.934:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:250 (rx::HLSLCompiler::compileToBinary): 
+C:\fakepath(103,1-6): warning X4000: use of potentially uninitialized variable (dyn_index_vec4_float4_int)
+
+[44196:17132:0502/122819.076:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:250 (rx::HLSLCompiler::compileToBinary): 
+C:\fakepath(136,1): warning X4000: use of potentially uninitialized variable (f_i_int_int_int2)
+C:\fakepath(138,1): warning X4000: use of potentially uninitialized variable (f_i_int_int_int2)
+C:\fakepath(174,1): warning X4000: use of potentially uninitialized variable (f_u_int_int_int)
+
+[44196:23016:0502/122819.890:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:250 (rx::HLSLCompiler::compileToBinary): 
+C:\fakepath(166,1): warning X4000: use of potentially uninitialized variable (f_renderMipMapLevel_int)
+
+[44196:15644:0502/122819.907:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:250 (rx::HLSLCompiler::compileToBinary): 
+C:\fakepath(166,1): warning X4000: use of potentially uninitialized variable (f_renderMipMapLevel_int)
+
+[44196:43636:0502/122819.908:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:250 (rx::HLSLCompiler::compileToBinary): 
+C:\fakepath(166,1): warning X4000: use of potentially uninitialized variable (f_renderMipMapLevel_int)
+
+[44196:29088:0502/122819.915:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:250 (rx::HLSLCompiler::compileToBinary): 
+C:\fakepath(166,1): warning X4000: use of potentially uninitialized variable (f_renderMipMapLevel_int)
+
+[6272:21140:0502/123345.727:ERROR:device_event_log_impl.cc(196)] [12:33:45.448] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+[44196:1412:0502/123531.315:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:250 (rx::HLSLCompiler::compileToBinary): 
+C:\fakepath(382,11-39): warning X4008: floating point division by zero
+C:\fakepath(382,11-39): warning X4008: floating point division by zero
+
+[44196:36012:0502/123615.391:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:250 (rx::HLSLCompiler::compileToBinary): 
+C:\fakepath(382,11-39): warning X4008: floating point division by zero
+C:\fakepath(382,11-39): warning X4008: floating point division by zero
+

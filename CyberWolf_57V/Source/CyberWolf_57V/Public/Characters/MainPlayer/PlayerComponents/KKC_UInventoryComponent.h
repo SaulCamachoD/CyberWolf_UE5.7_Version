@@ -24,6 +24,7 @@ public:
 	UPROPERTY(BlueprintAssignable)
 	FOnItemUnEquipped OnItemUnEquipped;
 	
+	UPROPERTY()
 	UKKC_ItemData* ItemTest;
 
 protected:
