@@ -299,6 +299,9 @@
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Input\KKC_EnhancedInputComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Objects\KKC_PickupItem.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\UI\KKC_PlayerHud.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -311,12 +314,13 @@
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_FlightComponent.h"/>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_LocomotionComponent.h"/>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_StatsComponent.h"/>
-    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_UInventoryComponent.h" />
+    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_UInventoryComponent.h"/>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Data\KKC_CameraData.h"/>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Data\KKC_CharacterStatsData.h"/>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Data\KKC_ItemData.h"/>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Data\KKC_MovementData.h"/>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Input\KKC_EnhancedInputComponent.h"/>
+    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Objects\KKC_PickupItem.h"/>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\UI\KKC_PlayerHud.h"/>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\UI\KKC_PlayerStatsWidget.h"/>
   </ItemGroup>

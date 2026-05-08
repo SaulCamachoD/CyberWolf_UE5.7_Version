@@ -17,14 +17,6 @@ void UKKC_StatsComponent::InitializeComponent()
 void UKKC_StatsComponent::BeginPlay()
 {
 	Super::BeginPlay();
-    
-	UE_LOG(LogTemp, Warning, TEXT("=== STATS COMPONENT BEGIN PLAY ==="));
-	UE_LOG(LogTemp, Warning, TEXT("Owner: %s"), *GetOwner()->GetName());
-	UE_LOG(LogTemp, Warning, TEXT("InventoryComponent: %s"), 
-		InventoryComponent ? TEXT("VALIDO") : TEXT("NULLPTR"));
-	UE_LOG(LogTemp, Warning, TEXT("StatsData: %s"), 
-		StatsData ? TEXT("VALIDO") : TEXT("NULLPTR"));
-    
 	if (!StatsData) return;
     
 	CurrentHealth.Current = CurrentHealth.Max = StatsData->MaxHealth;
@@ -34,7 +26,6 @@ void UKKC_StatsComponent::BeginPlay()
 	if (InventoryComponent)
 	{
 		InventoryComponent->OnItemEquipped.AddDynamic(this, &UKKC_StatsComponent::addStat);
-		UE_LOG(LogTemp, Warning, TEXT(">>> Suscrito a OnItemEquipped <<<"));
 	}
 	else
 	{

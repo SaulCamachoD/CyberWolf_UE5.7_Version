@@ -70,7 +70,7 @@
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_StatsComponent.cpp">
       <Filter>Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_UInventaryComponent.cpp">
+    <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_UInventoryComponent.cpp">
       <Filter>Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents</Filter>
     </ClCompile>
     <Filter Include="Source\CyberWolf_57V\Private\Data">
@@ -93,6 +93,12 @@
     </Filter>
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Input\KKC_EnhancedInputComponent.cpp">
       <Filter>Source\CyberWolf_57V\Private\Input</Filter>
+    </ClCompile>
+    <Filter Include="Source\CyberWolf_57V\Private\Objects">
+      <UniqueIdentifier>{A1940BE3-2051-3AD4-B9F7-95504024EBC1}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Objects\KKC_PickupItem.cpp">
+      <Filter>Source\CyberWolf_57V\Private\Objects</Filter>
     </ClCompile>
     <Filter Include="Source\CyberWolf_57V\Private\UI">
       <UniqueIdentifier>{652C22E0-09EF-3EF4-8D1B-DB5357D2A1BC}</UniqueIdentifier>
@@ -133,7 +139,7 @@
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_StatsComponent.h">
       <Filter>Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_UInventaryComponent.h">
+    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_UInventoryComponent.h">
       <Filter>Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents</Filter>
     </ClInclude>
     <Filter Include="Source\CyberWolf_57V\Public\Data">
@@ -156,6 +162,12 @@
     </Filter>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Input\KKC_EnhancedInputComponent.h">
       <Filter>Source\CyberWolf_57V\Public\Input</Filter>
+    </ClInclude>
+    <Filter Include="Source\CyberWolf_57V\Public\Objects">
+      <UniqueIdentifier>{CB13C32E-B174-38D0-B76B-1CB72327E1BE}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Objects\KKC_PickupItem.h">
+      <Filter>Source\CyberWolf_57V\Public\Objects</Filter>
     </ClInclude>
     <Filter Include="Source\CyberWolf_57V\Public\UI">
       <UniqueIdentifier>{69E6D5ED-A08D-3FB5-A3A5-ECCEF3CBD200}</UniqueIdentifier>

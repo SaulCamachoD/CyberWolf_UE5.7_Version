@@ -11,16 +11,6 @@ void UKKC_UInventoryComponent::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	ItemTest = NewObject<UKKC_ItemData>();
-	ItemTest->Name = FText::FromString("Sword");
-	ItemTest->Slot = ESlots::LeftArm;
-	
-	AddItem(ItemTest);
-	FTimerHandle TimerHandle;
-	GetWorld()->GetTimerManager().SetTimer(TimerHandle, [this]()
-	{
-		EquipItem(ESlots::LeftArm, ItemTest);
-	}, 1.0f, false);
 }
 
 void UKKC_UInventoryComponent::AddItem(UKKC_ItemData* Item)
@@ -36,10 +26,7 @@ void UKKC_UInventoryComponent::RemoveItem(UKKC_ItemData* Item)
 void UKKC_UInventoryComponent::EquipItem(ESlots Slot, UKKC_ItemData* Item)
 {	
 	EquippedItems.Add(Slot, Item);
-    
-	UE_LOG(LogTemp, Warning, TEXT(">>> A punto de hacer Broadcast OnItemEquipped <<<"));
 	OnItemEquipped.Broadcast(Item);
-	UE_LOG(LogTemp, Warning, TEXT(">>> Broadcast completado <<<"));
 }
 
 void UKKC_UInventoryComponent::UnEquipItem(UKKC_ItemData* Item)

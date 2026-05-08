@@ -92,4 +92,13 @@ class CYBERWOLF_57V_API UKKC_ItemData : public UDataAsset
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Stats")
 	TArray<FStatsModifier> Modifiers;
 	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Visuals")
+	TSoftObjectPtr<UStaticMesh> StaticMesh;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Visuals")
+	FVector Scale = FVector(1.0f, 1.0f, 1.0f);
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Visuals")
+	TSoftObjectPtr<USoundBase> PickUpSound;
+	
 };

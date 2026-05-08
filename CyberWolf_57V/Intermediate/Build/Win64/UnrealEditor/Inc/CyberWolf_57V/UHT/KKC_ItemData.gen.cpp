@@ -13,6 +13,7 @@ static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compi
 void EmptyLinkFunctionForGeneratedCodeKKC_ItemData() {}
 
 // ********** Begin Cross Module References ********************************************************
+COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_ItemData();
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_ItemData_NoRegister();
 CYBERWOLF_57V_API UEnum* Z_Construct_UEnum_CyberWolf_57V_EItemRarity();
@@ -21,6 +22,8 @@ CYBERWOLF_57V_API UEnum* Z_Construct_UEnum_CyberWolf_57V_ESlots();
 CYBERWOLF_57V_API UEnum* Z_Construct_UEnum_CyberWolf_57V_EStatsType();
 CYBERWOLF_57V_API UScriptStruct* Z_Construct_UScriptStruct_FStatsModifier();
 ENGINE_API UClass* Z_Construct_UClass_UDataAsset();
+ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_UStaticMesh_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UTexture2D_NoRegister();
 GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTag();
 UPackage* Z_Construct_UPackage__Script_CyberWolf_57V();
@@ -429,6 +432,18 @@ struct Z_Construct_UClass_UKKC_ItemData_Statics
 		{ "Category", "Stats" },
 		{ "ModuleRelativePath", "Public/Data/KKC_ItemData.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StaticMesh_MetaData[] = {
+		{ "Category", "Visuals" },
+		{ "ModuleRelativePath", "Public/Data/KKC_ItemData.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Scale_MetaData[] = {
+		{ "Category", "Visuals" },
+		{ "ModuleRelativePath", "Public/Data/KKC_ItemData.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PickUpSound_MetaData[] = {
+		{ "Category", "Visuals" },
+		{ "ModuleRelativePath", "Public/Data/KKC_ItemData.h" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Class UKKC_ItemData constinit property declarations ****************************
@@ -442,6 +457,9 @@ struct Z_Construct_UClass_UKKC_ItemData_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ItemTag;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Modifiers_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Modifiers;
+	static const UECodeGen_Private::FSoftObjectPropertyParams NewProp_StaticMesh;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_Scale;
+	static const UECodeGen_Private::FSoftObjectPropertyParams NewProp_PickUpSound;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class UKKC_ItemData constinit property declarations ******************************
 	static UObject* (*const DependentSingletons[])();
@@ -462,6 +480,9 @@ const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UKKC_ItemData_St
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UKKC_ItemData_Statics::NewProp_ItemTag = { "ItemTag", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_ItemData, ItemTag), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ItemTag_MetaData), NewProp_ItemTag_MetaData) }; // 517357616
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UKKC_ItemData_Statics::NewProp_Modifiers_Inner = { "Modifiers", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FStatsModifier, METADATA_PARAMS(0, nullptr) }; // 4234812089
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UKKC_ItemData_Statics::NewProp_Modifiers = { "Modifiers", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_ItemData, Modifiers), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Modifiers_MetaData), NewProp_Modifiers_MetaData) }; // 4234812089
+const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UClass_UKKC_ItemData_Statics::NewProp_StaticMesh = { "StaticMesh", nullptr, (EPropertyFlags)0x0014000000010005, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_ItemData, StaticMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StaticMesh_MetaData), NewProp_StaticMesh_MetaData) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UKKC_ItemData_Statics::NewProp_Scale = { "Scale", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_ItemData, Scale), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Scale_MetaData), NewProp_Scale_MetaData) };
+const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UClass_UKKC_ItemData_Statics::NewProp_PickUpSound = { "PickUpSound", nullptr, (EPropertyFlags)0x0014000000010005, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_ItemData, PickUpSound), Z_Construct_UClass_USoundBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PickUpSound_MetaData), NewProp_PickUpSound_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UKKC_ItemData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_ItemData_Statics::NewProp_Name,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_ItemData_Statics::NewProp_Description,
@@ -473,6 +494,9 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UKKC_Item
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_ItemData_Statics::NewProp_ItemTag,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_ItemData_Statics::NewProp_Modifiers_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_ItemData_Statics::NewProp_Modifiers,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_ItemData_Statics::NewProp_StaticMesh,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_ItemData_Statics::NewProp_Scale,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_ItemData_Statics::NewProp_PickUpSound,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UKKC_ItemData_Statics::PropPointers) < 2048);
 // ********** End Class UKKC_ItemData Property Definitions *****************************************
@@ -525,10 +549,10 @@ struct Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_Cyber
 		{ FStatsModifier::StaticStruct, Z_Construct_UScriptStruct_FStatsModifier_Statics::NewStructOps, TEXT("StatsModifier"),&Z_Registration_Info_UScriptStruct_FStatsModifier, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FStatsModifier), 4234812089U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UKKC_ItemData, UKKC_ItemData::StaticClass, TEXT("UKKC_ItemData"), &Z_Registration_Info_UClass_UKKC_ItemData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_ItemData), 4248442537U) },
+		{ Z_Construct_UClass_UKKC_ItemData, UKKC_ItemData::StaticClass, TEXT("UKKC_ItemData"), &Z_Registration_Info_UClass_UKKC_ItemData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_ItemData), 114797747U) },
 	};
 }; // Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h__Script_CyberWolf_57V_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h__Script_CyberWolf_57V_1270088118{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h__Script_CyberWolf_57V_2096543831{
 	TEXT("/Script/CyberWolf_57V"),
 	Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h__Script_CyberWolf_57V_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h__Script_CyberWolf_57V_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h__Script_CyberWolf_57V_Statics::ScriptStructInfo),
