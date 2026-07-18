@@ -103,15 +103,15 @@ UKKC_AirMovementComponent::~UKKC_AirMovementComponent() {}
 // ********** End Class UKKC_AirMovementComponent **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_AirMovementComponent_h__Script_CyberWolf_57V_Statics
+struct Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_AirMovementComponent_h__Script_CyberWolf_57V_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UKKC_AirMovementComponent, UKKC_AirMovementComponent::StaticClass, TEXT("UKKC_AirMovementComponent"), &Z_Registration_Info_UClass_UKKC_AirMovementComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_AirMovementComponent), 1520627838U) },
 	};
-}; // Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_AirMovementComponent_h__Script_CyberWolf_57V_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_AirMovementComponent_h__Script_CyberWolf_57V_1502336331{
+}; // Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_AirMovementComponent_h__Script_CyberWolf_57V_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_AirMovementComponent_h__Script_CyberWolf_57V_1502336331{
 	TEXT("/Script/CyberWolf_57V"),
-	Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_AirMovementComponent_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_AirMovementComponent_h__Script_CyberWolf_57V_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_AirMovementComponent_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_AirMovementComponent_h__Script_CyberWolf_57V_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

@@ -6,24 +6,25 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Input/KKC_EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "Characters/MainPlayer/PlayerComponents/KKC_InteractionComponent.h"
 #include "Characters/MainPlayer/PlayerComponents/KKC_StatsComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
 AKKC_WolfPlayer::AKKC_WolfPlayer()
 {
- 	SpringArmComp = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
-	SpringArmComp->SetupAttachment(GetMesh());
-	SpringArmComp->SetupAttachment(RootComponent);
-	
+	SpringArmComp = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
+	SpringArmComp->SetupAttachment(RootComponent);  
+
 	CameraComp = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	CameraComp->SetupAttachment(SpringArmComp);
-	
+
 	CameraComponent = CreateDefaultSubobject<UKKC_CameraComponents>(TEXT("CPCamera"));
-	
+
 	bUseControllerRotationYaw   = false;
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationRoll  = false;
 	GetCharacterMovement()->bOrientRotationToMovement = true;
+	GetCharacterMovement()->RotationRate = FRotator(0.f, 720.f, 0.f);
 	SpringArmComp->bUsePawnControlRotation = true;
 	CameraComp->bUsePawnControlRotation = false;
 	
@@ -32,6 +33,7 @@ AKKC_WolfPlayer::AKKC_WolfPlayer()
 	AirMovementComp = CreateDefaultSubobject<UKKC_AirMovementComponent>(TEXT("AirMovementComp"));
 	FlightComp = CreateDefaultSubobject<UKKC_FlightComponent>(TEXT("FlightComp"));
 	StatsComp = CreateDefaultSubobject<UKKC_StatsComponent>(TEXT("StatsComp"));
+	InteractComp = CreateDefaultSubobject<UKKC_InteractionComponent>(TEXT("InteractComp"));
 
 }
 
@@ -56,11 +58,6 @@ void AKKC_WolfPlayer::Move(const FInputActionValue& Value)
 	LocomotionComp->ProcessMoveInput(Axis);
 }
 
-void AKKC_WolfPlayer::Look(const FInputActionValue& Value)
-{
-	CameraComponent->ProcessLookInput(Value.Get<FVector2D>());
-}
-
 void AKKC_WolfPlayer::StartJump(const FInputActionValue& Value)
 {
 	AirMovementComp->RequestJump();
@@ -80,6 +77,11 @@ void AKKC_WolfPlayer::StopSprint(const FInputActionValue& Value)
 	LocomotionComp->SetSpringting(Value.Get<bool>());
 }
 
+void AKKC_WolfPlayer::Interact(const FInputActionValue& Value)
+{
+	InteractComp->Interact();
+}
+
 void AKKC_WolfPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {	
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
@@ -94,9 +96,9 @@ void AKKC_WolfPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	}
 	
 	EIC -> BindAction(IA_Move, ETriggerEvent::Triggered, this, &AKKC_WolfPlayer::Move);
-	EIC -> BindAction(IA_Look, ETriggerEvent::Triggered, this, &AKKC_WolfPlayer::Look);
 	EIC -> BindAction(IA_Sprint, ETriggerEvent::Started, this, &AKKC_WolfPlayer::StartSprint);
 	EIC -> BindAction(IA_Sprint, ETriggerEvent::Completed, this, &AKKC_WolfPlayer::StopSprint);
+	EIC -> BindAction(IA_Interact, ETriggerEvent::Triggered, this, &AKKC_WolfPlayer::Interact);
 
 }
 

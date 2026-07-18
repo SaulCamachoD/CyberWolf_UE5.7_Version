@@ -165,15 +165,15 @@ UKKC_CharacterStatsData::~UKKC_CharacterStatsData() {}
 // ********** End Class UKKC_CharacterStatsData ****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h__Script_CyberWolf_57V_Statics
+struct Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h__Script_CyberWolf_57V_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UKKC_CharacterStatsData, UKKC_CharacterStatsData::StaticClass, TEXT("UKKC_CharacterStatsData"), &Z_Registration_Info_UClass_UKKC_CharacterStatsData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_CharacterStatsData), 3743734932U) },
 	};
-}; // Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h__Script_CyberWolf_57V_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h__Script_CyberWolf_57V_3561243279{
+}; // Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h__Script_CyberWolf_57V_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h__Script_CyberWolf_57V_3561243279{
 	TEXT("/Script/CyberWolf_57V"),
-	Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h__Script_CyberWolf_57V_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h__Script_CyberWolf_57V_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

@@ -6,6 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "Data/KKC_MovementData.h"
 #include "KKC_LocomotionComponent.generated.h"
+class UKKC_CameraComponents;
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -18,12 +19,11 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
-	
+	UPROPERTY() TObjectPtr<UKKC_CameraComponents> CameraComponentRef;
 	UPROPERTY(EditDefaultsOnly, Category="Data")
 	UKKC_MovementData* MovementData;
 	
 	bool bIsSprinting = false;
-	bool bSprint = false;
 public:	
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	void InitializeComponent() override;

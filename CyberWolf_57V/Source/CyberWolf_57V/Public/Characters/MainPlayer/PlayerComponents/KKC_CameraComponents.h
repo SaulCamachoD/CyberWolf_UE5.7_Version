@@ -14,10 +14,10 @@ class USpringArmComponent;
 UENUM(BlueprintType)
 enum class ECameraMode : uint8
 {
-	ThirdPerson,
-	Aiming,
-	Flight,
-	Cutscene
+	Default,   // exploración normal
+	Olfato,    // zoom out — lectura de rastros en el mapa
+	Caza,      // zoom in — instinto de caza / combate
+	Cutscene   // reservado para secuencias (ej. pull-back del beat 10)
 };
 
 
@@ -29,33 +29,33 @@ class CYBERWOLF_57V_API UKKC_CameraComponents : public UActorComponent
 public:	
 	UPROPERTY(EditDefaultsOnly, Category="Camera")
 	TObjectPtr<UKKC_CameraData> CameraData;
-
+ 
 	void InitializeCamera(USpringArmComponent* InArm, UCameraComponent* InCamera);
-
-	// Llamado desde Character::Look()
-	void ProcessLookInput(const FVector2D& Input, bool bIsGamepad = false);
-
-	// Llamado por otros sistemas (AimComponent, FlightComponent, etc.)
+ 
+	// Llamado por otros sistemas (OlfatoComponent, CombatComponent, etc.)
 	UFUNCTION(BlueprintCallable)
 	void SetCameraMode(ECameraMode NewMode);
-
-	// Para Sprint FOV kick
-	void SetSprintActive(bool bSprint);
-
+ 
 	ECameraMode GetCameraMode() const { return CurrentMode; }
+ 
+	// Yaw fijo de la cámara isométrica — lo consume LocomotionComponent
+	// para alinear el input de movimiento con la pantalla
+	UFUNCTION(BlueprintPure)
+	float GetCameraYaw() const;
 
 private:
 	UPROPERTY() TObjectPtr<USpringArmComponent> SpringArm;
 	UPROPERTY() TObjectPtr<UCameraComponent>    Camera;
-
-	ECameraMode CurrentMode = ECameraMode::ThirdPerson;
-	float       TargetFOV   = 75.f;
-	float       TargetArmLength = 350.f;
-
+ 
+	ECameraMode CurrentMode = ECameraMode::Default;
+ 
+	float TargetFOV       = 35.f;
+	float TargetArmLength = 1600.f;
+ 
 	virtual void TickComponent(float DeltaTime,
 		ELevelTick TickType,
 		FActorComponentTickFunction* ThisTickFunction) override;
-
+ 
 	void InterpCameraValues(float DeltaTime);
 
 		

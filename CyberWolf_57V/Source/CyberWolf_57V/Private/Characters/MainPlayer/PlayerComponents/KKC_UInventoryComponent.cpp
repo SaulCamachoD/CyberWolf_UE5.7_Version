@@ -1,6 +1,8 @@
 #include "Characters/MainPlayer/PlayerComponents/KKC_UInventoryComponent.h"
 #include "Data/KKC_ItemData.h"
 
+
+
 UKKC_UInventoryComponent::UKKC_UInventoryComponent()
 {
 	PrimaryComponentTick.bCanEverTick = true;
@@ -16,11 +18,18 @@ void UKKC_UInventoryComponent::BeginPlay()
 void UKKC_UInventoryComponent::AddItem(UKKC_ItemData* Item)
 {
 	Bag.Add(Item);
+	OnBagUpdated.Broadcast();
 }
 
 void UKKC_UInventoryComponent::RemoveItem(UKKC_ItemData* Item)
-{
-	Bag.Remove(Item);
+{	
+	if (!Item) return;
+	
+	int32 Removed = Bag.Remove(Item);
+	if (Removed >0)
+	{
+		OnBagUpdated.Broadcast();
+	}
 }
 
 void UKKC_UInventoryComponent::EquipItem(ESlots Slot, UKKC_ItemData* Item)

@@ -64,6 +64,9 @@
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_FlightComponent.cpp">
       <Filter>Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_InteractionComponent.cpp">
+      <Filter>Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents\KKC_LocomotionComponent.cpp">
       <Filter>Source\CyberWolf_57V\Private\Characters\MainPlayer\PlayerComponents</Filter>
     </ClCompile>
@@ -93,6 +96,12 @@
     </Filter>
     <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Input\KKC_EnhancedInputComponent.cpp">
       <Filter>Source\CyberWolf_57V\Private\Input</Filter>
+    </ClCompile>
+    <Filter Include="Source\CyberWolf_57V\Private\Interfaces">
+      <UniqueIdentifier>{3516994A-1A9F-3CDE-9099-CC6A6290F035}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CyberWolf_57V\Private\Interfaces\KKC_Interactable.cpp">
+      <Filter>Source\CyberWolf_57V\Private\Interfaces</Filter>
     </ClCompile>
     <Filter Include="Source\CyberWolf_57V\Private\Objects">
       <UniqueIdentifier>{A1940BE3-2051-3AD4-B9F7-95504024EBC1}</UniqueIdentifier>
@@ -133,6 +142,9 @@
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_FlightComponent.h">
       <Filter>Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_InteractionComponent.h">
+      <Filter>Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents\KKC_LocomotionComponent.h">
       <Filter>Source\CyberWolf_57V\Public\Characters\MainPlayer\PlayerComponents</Filter>
     </ClInclude>
@@ -162,6 +174,12 @@
     </Filter>
     <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Input\KKC_EnhancedInputComponent.h">
       <Filter>Source\CyberWolf_57V\Public\Input</Filter>
+    </ClInclude>
+    <Filter Include="Source\CyberWolf_57V\Public\Interfaces">
+      <UniqueIdentifier>{561576DA-1BC2-3984-9DC6-924F2F132A80}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\CyberWolf_57V\Public\Interfaces\KKC_Interactable.h">
+      <Filter>Source\CyberWolf_57V\Public\Interfaces</Filter>
     </ClInclude>
     <Filter Include="Source\CyberWolf_57V\Public\Objects">
       <UniqueIdentifier>{CB13C32E-B174-38D0-B76B-1CB72327E1BE}</UniqueIdentifier>

@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_UKKC_CharacterStatsData_Statics;
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_CharacterStatsData_NoRegister();
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUKKC_CharacterStatsData(); \
 	friend struct ::Z_Construct_UClass_UKKC_CharacterStatsData_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(UKKC_CharacterStatsData)
 
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h_13_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UKKC_CharacterStatsData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -43,12 +43,12 @@ public: \
 	NO_API virtual ~UKKC_CharacterStatsData();
 
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h_10_PROLOG
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h_13_GENERATED_BODY \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h_10_PROLOG
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h_13_INCLASS_NO_PURE_DECLS \
-	FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h_13_ENHANCED_CONSTRUCTORS \
+	FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h_13_INCLASS_NO_PURE_DECLS \
+	FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -58,6 +58,6 @@ class UKKC_CharacterStatsData;
 // ********** End Class UKKC_CharacterStatsData ****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h
+#define CURRENT_FILE_ID FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CharacterStatsData_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

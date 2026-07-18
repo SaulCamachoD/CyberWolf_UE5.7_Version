@@ -1,7 +1,7 @@
 {
 	"RemapUnityFiles": 
 	{
-		"Module.CyberWolf_57V.gen.cpp.obj": [
+		"Module.CyberWolf_57V.cpp.obj": [
 			"CyberWolf_57V.init.gen.cpp.obj",
 			"KKC_AirMovementComponent.gen.cpp.obj",
 			"KKC_CameraComponents.gen.cpp.obj",
@@ -9,14 +9,36 @@
 			"KKC_CharacterStatsData.gen.cpp.obj",
 			"KKC_EnhancedInputComponent.gen.cpp.obj",
 			"KKC_FlightComponent.gen.cpp.obj",
+			"KKC_Interactable.gen.cpp.obj",
+			"KKC_InteractionComponent.gen.cpp.obj",
 			"KKC_ItemData.gen.cpp.obj",
 			"KKC_LocomotionComponent.gen.cpp.obj",
 			"KKC_MovementData.gen.cpp.obj",
+			"KKC_PickupItem.gen.cpp.obj",
 			"KKC_PlayerHud.gen.cpp.obj",
 			"KKC_PlayerStatsWidget.gen.cpp.obj",
 			"KKC_StatsComponent.gen.cpp.obj",
-			"KKC_UInventaryComponent.gen.cpp.obj",
-			"KKC_WolfPlayer.gen.cpp.obj"
+			"KKC_UInventoryComponent.gen.cpp.obj",
+			"KKC_WolfPlayer.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"CyberWolf_57V.cpp.obj",
+			"KKC_AirMovementComponent.cpp.obj",
+			"KKC_CameraComponents.cpp.obj",
+			"KKC_FlightComponent.cpp.obj",
+			"KKC_LocomotionComponent.cpp.obj",
+			"KKC_StatsComponent.cpp.obj",
+			"KKC_CameraData.cpp.obj",
+			"KKC_CharacterStatsData.cpp.obj",
+			"KKC_MovementData.cpp.obj",
+			"KKC_EnhancedInputComponent.cpp.obj",
+			"KKC_PlayerHud.cpp.obj",
+			"KKC_PlayerStatsWidget.cpp.obj",
+			"KKC_WolfPlayer.cpp.obj",
+			"KKC_InteractionComponent.cpp.obj",
+			"KKC_UInventoryComponent.cpp.obj",
+			"KKC_ItemData.cpp.obj",
+			"KKC_Interactable.cpp.obj",
+			"KKC_PickupItem.cpp.obj"
 		]
 	}
 }

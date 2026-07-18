@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_AKKC_PickupItem_Statics;
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_AKKC_PickupItem_NoRegister();
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAKKC_PickupItem(); \
 	friend struct ::Z_Construct_UClass_AKKC_PickupItem_Statics; \
@@ -28,10 +28,11 @@ private: \
 	friend CYBERWOLF_57V_API UClass* ::Z_Construct_UClass_AKKC_PickupItem_NoRegister(); \
 public: \
 	DECLARE_CLASS2(AKKC_PickupItem, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/CyberWolf_57V"), Z_Construct_UClass_AKKC_PickupItem_NoRegister) \
-	DECLARE_SERIALIZER(AKKC_PickupItem)
+	DECLARE_SERIALIZER(AKKC_PickupItem) \
+	virtual UObject* _getUObject() const override { return const_cast<AKKC_PickupItem*>(this); }
 
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h_17_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AKKC_PickupItem(AKKC_PickupItem&&) = delete; \
 	AKKC_PickupItem(const AKKC_PickupItem&) = delete; \
@@ -41,12 +42,12 @@ public: \
 	NO_API virtual ~AKKC_PickupItem();
 
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h_12_PROLOG
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h_15_GENERATED_BODY \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h_14_PROLOG
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h_15_INCLASS_NO_PURE_DECLS \
-	FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h_15_ENHANCED_CONSTRUCTORS \
+	FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h_17_INCLASS_NO_PURE_DECLS \
+	FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -56,6 +57,6 @@ class AKKC_PickupItem;
 // ********** End Class AKKC_PickupItem ************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h
+#define CURRENT_FILE_ID FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

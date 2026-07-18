@@ -11,6 +11,7 @@
 #include "KKC_WolfPlayer.generated.h"
 
 
+class UKKC_InteractionComponent;
 class UKKC_StatsComponent;
 class UKKC_CameraComponents;
 class UInputMappingContext;
@@ -38,6 +39,9 @@ class CYBERWOLF_57V_API AKKC_WolfPlayer : public ACharacter
 	
 	UPROPERTY(EditDefaultsOnly, Category="Input")
 	TObjectPtr<UInputAction> IA_Sprint;
+
+	UPROPERTY(EditDefaultsOnly, Category="Input")
+	TObjectPtr<UInputAction> IA_Interact;
 	
 
 public:
@@ -69,6 +73,9 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category="Components")
 	TObjectPtr<UKKC_StatsComponent> StatsComp;
 
+	UPROPERTY(VisibleAnywhere, Category="Components")
+	TObjectPtr<UKKC_InteractionComponent> InteractComp;
+
 public:	
 	virtual void Tick(float DeltaTime) override;
 
@@ -76,10 +83,10 @@ public:
 	
 private:
 	void Move(const FInputActionValue& Value);
-	void Look(const FInputActionValue& Value);
 	void StartJump(const FInputActionValue& Value);
 	void StopJump(const FInputActionValue& Value);
 	void StartSprint(const FInputActionValue& Value);
 	void StopSprint(const FInputActionValue& Value);
+	void Interact(const FInputActionValue& Value);
 
 };

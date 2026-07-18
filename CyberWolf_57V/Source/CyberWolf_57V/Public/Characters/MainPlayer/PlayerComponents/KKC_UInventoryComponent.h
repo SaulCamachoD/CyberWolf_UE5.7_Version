@@ -9,6 +9,8 @@ class UKKC_ItemData;
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnItemEquipped, UKKC_ItemData*, Item);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnItemUnEquipped, UKKC_ItemData*, Item);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnBagUpdated);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnItemSelected, UKKC_ItemData*, Item);
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class CYBERWOLF_57V_API UKKC_UInventoryComponent : public UActorComponent
@@ -23,6 +25,12 @@ public:
 	
 	UPROPERTY(BlueprintAssignable)
 	FOnItemUnEquipped OnItemUnEquipped;
+	
+	UPROPERTY(BlueprintAssignable)
+	FOnBagUpdated OnBagUpdated;
+
+	UPROPERTY(BlueprintAssignable)  
+	FOnItemSelected OnItemSelected;
 	
 	UPROPERTY()
 	UKKC_ItemData* ItemTest;
@@ -52,5 +60,11 @@ public:
 	
 	UFUNCTION(BlueprintCallable)
 	UKKC_ItemData* GetEquippedItem(ESlots Slot);
+	
+	UFUNCTION(BlueprintCallable)
+	TArray<UKKC_ItemData*> GetBag() const { return Bag; }
+
+	UFUNCTION(BlueprintCallable)
+	TMap<ESlots, UKKC_ItemData*> GetEquippedItems() const { return EquippedItems; }
 	
 };

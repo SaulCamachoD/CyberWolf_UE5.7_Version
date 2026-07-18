@@ -58,74 +58,90 @@ struct Z_Construct_UClass_UKKC_CameraData_Statics
 		{ "IncludePath", "Data/KKC_CameraData.h" },
 		{ "ModuleRelativePath", "Public/Data/KKC_CameraData.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MouseSensitivityX_MetaData[] = {
-		{ "Category", "Sensitivity" },
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CameraPitch_MetaData[] = {
+		{ "Category", "Isometric" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// --- Encuadre isom\xc3\xa9trico fijo ---\n// Pitch: -50\xc2\xb0 es el sweet spot moderno (The Ascent, Hades).\n// -30\xc2\xb0 se siente \"detr\xc3\xa1s del hombro\", -60\xc2\xb0 muy cenital. Prueba entre -45 y -55.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Data/KKC_CameraData.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "--- Encuadre isom\xc3\xa9trico fijo ---\nPitch: -50\xc2\xb0 es el sweet spot moderno (The Ascent, Hades).\n-30\xc2\xb0 se siente \"detr\xc3\xa1s del hombro\", -60\xc2\xb0 muy cenital. Prueba entre -45 y -55." },
+#endif
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MouseSensitivityY_MetaData[] = {
-		{ "Category", "Sensitivity" },
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CameraYaw_MetaData[] = {
+		{ "Category", "Isometric" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Yaw 45\xc2\xb0 = diagonal cl\xc3\xa1sica isom\xc3\xa9trica (las paredes se ven en \xc3\xa1ngulo)\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Data/KKC_CameraData.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Yaw 45\xc2\xb0 = diagonal cl\xc3\xa1sica isom\xc3\xa9trica (las paredes se ven en \xc3\xa1ngulo)" },
+#endif
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GamepadSensitivityX_MetaData[] = {
-		{ "Category", "Sensitivity" },
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FOVDefault_MetaData[] = {
+		{ "Category", "Isometric" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// FOV bajo + brazo largo = compresi\xc3\xb3n telefoto que imita la proyecci\xc3\xb3n\n// isom\xc3\xa9trica real (menos distorsi\xc3\xb3n de perspectiva en los bordes)\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Data/KKC_CameraData.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "FOV bajo + brazo largo = compresi\xc3\xb3n telefoto que imita la proyecci\xc3\xb3n\nisom\xc3\xa9trica real (menos distorsi\xc3\xb3n de perspectiva en los bordes)" },
+#endif
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PitchMin_MetaData[] = {
-		{ "Category", "Clamp" },
-		{ "ModuleRelativePath", "Public/Data/KKC_CameraData.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PitchMax_MetaData[] = {
-		{ "Category", "Clamp" },
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ScreenOffsetRight_MetaData[] = {
+		{ "Category", "Isometric" },
 		{ "ModuleRelativePath", "Public/Data/KKC_CameraData.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ArmLengthDefault_MetaData[] = {
 		{ "Category", "SpringArm" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// --- Longitudes del brazo por modo ---\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Data/KKC_CameraData.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "--- Longitudes del brazo por modo ---" },
+#endif
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ArmLengthAiming_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ArmLengthOlfato_MetaData[] = {
 		{ "Category", "SpringArm" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Modo olfato: la c\xc3\xa1mara se aleja para leer los rastros en el mapa\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Data/KKC_CameraData.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Modo olfato: la c\xc3\xa1mara se aleja para leer los rastros en el mapa" },
+#endif
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ArmLengthFlight_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ArmLengthCaza_MetaData[] = {
 		{ "Category", "SpringArm" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Instinto de caza: se acerca para la intensidad del combate\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Data/KKC_CameraData.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Instinto de caza: se acerca para la intensidad del combate" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CameraLagSpeed_MetaData[] = {
 		{ "Category", "SpringArm" },
 		{ "ModuleRelativePath", "Public/Data/KKC_CameraData.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FOVDefault_MetaData[] = {
-		{ "Category", "FOV" },
-		{ "ModuleRelativePath", "Public/Data/KKC_CameraData.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FOVAiming_MetaData[] = {
-		{ "Category", "FOV" },
-		{ "ModuleRelativePath", "Public/Data/KKC_CameraData.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FOVSprint_MetaData[] = {
-		{ "Category", "FOV" },
-		{ "ModuleRelativePath", "Public/Data/KKC_CameraData.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FOVInterpSpeed_MetaData[] = {
-		{ "Category", "FOV" },
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InterpSpeed_MetaData[] = {
+		{ "Category", "Interp" },
 		{ "ModuleRelativePath", "Public/Data/KKC_CameraData.h" },
 	};
 #endif // WITH_METADATA
 
 // ********** Begin Class UKKC_CameraData constinit property declarations **************************
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_MouseSensitivityX;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_MouseSensitivityY;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_GamepadSensitivityX;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_PitchMin;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_PitchMax;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_ArmLengthDefault;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_ArmLengthAiming;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_ArmLengthFlight;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_CameraLagSpeed;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_CameraPitch;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_CameraYaw;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_FOVDefault;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_FOVAiming;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_FOVSprint;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_FOVInterpSpeed;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ScreenOffsetRight;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ArmLengthDefault;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ArmLengthOlfato;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ArmLengthCaza;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_CameraLagSpeed;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_InterpSpeed;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class UKKC_CameraData constinit property declarations ****************************
 	static UObject* (*const DependentSingletons[])();
@@ -136,33 +152,25 @@ struct Z_Construct_UClass_UKKC_CameraData_Statics
 }; // struct Z_Construct_UClass_UKKC_CameraData_Statics
 
 // ********** Begin Class UKKC_CameraData Property Definitions *************************************
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_MouseSensitivityX = { "MouseSensitivityX", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, MouseSensitivityX), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MouseSensitivityX_MetaData), NewProp_MouseSensitivityX_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_MouseSensitivityY = { "MouseSensitivityY", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, MouseSensitivityY), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MouseSensitivityY_MetaData), NewProp_MouseSensitivityY_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_GamepadSensitivityX = { "GamepadSensitivityX", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, GamepadSensitivityX), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GamepadSensitivityX_MetaData), NewProp_GamepadSensitivityX_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_PitchMin = { "PitchMin", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, PitchMin), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PitchMin_MetaData), NewProp_PitchMin_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_PitchMax = { "PitchMax", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, PitchMax), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PitchMax_MetaData), NewProp_PitchMax_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_ArmLengthDefault = { "ArmLengthDefault", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, ArmLengthDefault), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ArmLengthDefault_MetaData), NewProp_ArmLengthDefault_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_ArmLengthAiming = { "ArmLengthAiming", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, ArmLengthAiming), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ArmLengthAiming_MetaData), NewProp_ArmLengthAiming_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_ArmLengthFlight = { "ArmLengthFlight", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, ArmLengthFlight), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ArmLengthFlight_MetaData), NewProp_ArmLengthFlight_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_CameraLagSpeed = { "CameraLagSpeed", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, CameraLagSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraLagSpeed_MetaData), NewProp_CameraLagSpeed_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_CameraPitch = { "CameraPitch", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, CameraPitch), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraPitch_MetaData), NewProp_CameraPitch_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_CameraYaw = { "CameraYaw", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, CameraYaw), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraYaw_MetaData), NewProp_CameraYaw_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_FOVDefault = { "FOVDefault", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, FOVDefault), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FOVDefault_MetaData), NewProp_FOVDefault_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_FOVAiming = { "FOVAiming", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, FOVAiming), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FOVAiming_MetaData), NewProp_FOVAiming_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_FOVSprint = { "FOVSprint", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, FOVSprint), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FOVSprint_MetaData), NewProp_FOVSprint_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_FOVInterpSpeed = { "FOVInterpSpeed", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, FOVInterpSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FOVInterpSpeed_MetaData), NewProp_FOVInterpSpeed_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_ScreenOffsetRight = { "ScreenOffsetRight", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, ScreenOffsetRight), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ScreenOffsetRight_MetaData), NewProp_ScreenOffsetRight_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_ArmLengthDefault = { "ArmLengthDefault", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, ArmLengthDefault), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ArmLengthDefault_MetaData), NewProp_ArmLengthDefault_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_ArmLengthOlfato = { "ArmLengthOlfato", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, ArmLengthOlfato), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ArmLengthOlfato_MetaData), NewProp_ArmLengthOlfato_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_ArmLengthCaza = { "ArmLengthCaza", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, ArmLengthCaza), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ArmLengthCaza_MetaData), NewProp_ArmLengthCaza_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_CameraLagSpeed = { "CameraLagSpeed", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, CameraLagSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraLagSpeed_MetaData), NewProp_CameraLagSpeed_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_InterpSpeed = { "InterpSpeed", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_CameraData, InterpSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InterpSpeed_MetaData), NewProp_InterpSpeed_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UKKC_CameraData_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_MouseSensitivityX,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_MouseSensitivityY,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_GamepadSensitivityX,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_PitchMin,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_PitchMax,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_ArmLengthDefault,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_ArmLengthAiming,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_ArmLengthFlight,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_CameraLagSpeed,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_CameraPitch,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_CameraYaw,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_FOVDefault,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_FOVAiming,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_FOVSprint,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_FOVInterpSpeed,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_ScreenOffsetRight,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_ArmLengthDefault,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_ArmLengthOlfato,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_ArmLengthCaza,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_CameraLagSpeed,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_CameraData_Statics::NewProp_InterpSpeed,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UKKC_CameraData_Statics::PropPointers) < 2048);
 // ********** End Class UKKC_CameraData Property Definitions ***************************************
@@ -203,15 +211,15 @@ UKKC_CameraData::~UKKC_CameraData() {}
 // ********** End Class UKKC_CameraData ************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CameraData_h__Script_CyberWolf_57V_Statics
+struct Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CameraData_h__Script_CyberWolf_57V_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UKKC_CameraData, UKKC_CameraData::StaticClass, TEXT("UKKC_CameraData"), &Z_Registration_Info_UClass_UKKC_CameraData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_CameraData), 3667302802U) },
+		{ Z_Construct_UClass_UKKC_CameraData, UKKC_CameraData::StaticClass, TEXT("UKKC_CameraData"), &Z_Registration_Info_UClass_UKKC_CameraData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_CameraData), 2866917311U) },
 	};
-}; // Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CameraData_h__Script_CyberWolf_57V_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CameraData_h__Script_CyberWolf_57V_2186613315{
+}; // Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CameraData_h__Script_CyberWolf_57V_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CameraData_h__Script_CyberWolf_57V_850224635{
 	TEXT("/Script/CyberWolf_57V"),
-	Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CameraData_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CameraData_h__Script_CyberWolf_57V_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CameraData_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_CameraData_h__Script_CyberWolf_57V_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

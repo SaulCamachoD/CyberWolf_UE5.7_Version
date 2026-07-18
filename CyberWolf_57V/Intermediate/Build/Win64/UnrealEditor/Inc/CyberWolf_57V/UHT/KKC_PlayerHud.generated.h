@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class AKKC_PlayerHud ***********************************************************
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnStaminaDepleted); \
 	DECLARE_FUNCTION(execOnStaminaChanged); \
 	DECLARE_FUNCTION(execOnHealthChanged);
@@ -26,7 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_AKKC_PlayerHud_Statics;
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_AKKC_PlayerHud_NoRegister();
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAKKC_PlayerHud(); \
 	friend struct ::Z_Construct_UClass_AKKC_PlayerHud_Statics; \
@@ -37,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(AKKC_PlayerHud)
 
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AKKC_PlayerHud(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -49,13 +49,13 @@ public: \
 	NO_API virtual ~AKKC_PlayerHud();
 
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_13_PROLOG
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_16_GENERATED_BODY \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_13_PROLOG
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_16_INCLASS_NO_PURE_DECLS \
-	FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_16_ENHANCED_CONSTRUCTORS \
+	FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_16_INCLASS_NO_PURE_DECLS \
+	FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -65,6 +65,6 @@ class AKKC_PlayerHud;
 // ********** End Class AKKC_PlayerHud *************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h
+#define CURRENT_FILE_ID FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_UI_KKC_PlayerHud_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

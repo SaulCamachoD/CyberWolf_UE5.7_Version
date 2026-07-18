@@ -18,14 +18,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 enum class ECameraMode : uint8;
 
 // ********** Begin Class UKKC_CameraComponents ****************************************************
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetCameraYaw); \
 	DECLARE_FUNCTION(execSetCameraMode);
 
 
 struct Z_Construct_UClass_UKKC_CameraComponents_Statics;
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_CameraComponents_NoRegister();
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_27_INCLASS_NO_PURE_DECLS \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_27_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUKKC_CameraComponents(); \
 	friend struct ::Z_Construct_UClass_UKKC_CameraComponents_Statics; \
@@ -36,7 +37,7 @@ public: \
 	DECLARE_SERIALIZER(UKKC_CameraComponents)
 
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_27_ENHANCED_CONSTRUCTORS \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_27_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UKKC_CameraComponents(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -48,13 +49,13 @@ public: \
 	NO_API virtual ~UKKC_CameraComponents();
 
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_24_PROLOG
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_27_GENERATED_BODY \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_24_PROLOG
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_27_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_27_INCLASS_NO_PURE_DECLS \
-	FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_27_ENHANCED_CONSTRUCTORS \
+	FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_27_INCLASS_NO_PURE_DECLS \
+	FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h_27_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -64,13 +65,13 @@ class UKKC_CameraComponents;
 // ********** End Class UKKC_CameraComponents ******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h
+#define CURRENT_FILE_ID FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h
 
 // ********** Begin Enum ECameraMode ***************************************************************
 #define FOREACH_ENUM_ECAMERAMODE(op) \
-	op(ECameraMode::ThirdPerson) \
-	op(ECameraMode::Aiming) \
-	op(ECameraMode::Flight) \
+	op(ECameraMode::Default) \
+	op(ECameraMode::Olfato) \
+	op(ECameraMode::Caza) \
 	op(ECameraMode::Cutscene) 
 
 enum class ECameraMode : uint8;

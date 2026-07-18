@@ -14,11 +14,13 @@ void EmptyLinkFunctionForGeneratedCodeKKC_PickupItem() {}
 // ********** Begin Cross Module References ********************************************************
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_AKKC_PickupItem();
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_AKKC_PickupItem_NoRegister();
+CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_Interactable_NoRegister();
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_ItemData_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_AActor();
 ENGINE_API UClass* Z_Construct_UClass_URotatingMovementComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+UMG_API UClass* Z_Construct_UClass_UWidgetComponent_NoRegister();
 UPackage* Z_Construct_UPackage__Script_CyberWolf_57V();
 // ********** End Cross Module References **********************************************************
 
@@ -78,6 +80,11 @@ struct Z_Construct_UClass_AKKC_PickupItem_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Objects/KKC_PickupItem.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractionWidget_MetaData[] = {
+		{ "Category", "KKC_PickupItem" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Objects/KKC_PickupItem.h" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Class AKKC_PickupItem constinit property declarations **************************
@@ -85,9 +92,11 @@ struct Z_Construct_UClass_AKKC_PickupItem_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SphereComp;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_StaticMesh;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_RotatingMovement;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InteractionWidget;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class AKKC_PickupItem constinit property declarations ****************************
 	static UObject* (*const DependentSingletons[])();
+	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AKKC_PickupItem>::IsAbstract,
 	};
@@ -99,11 +108,13 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKKC_PickupIte
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKKC_PickupItem_Statics::NewProp_SphereComp = { "SphereComp", nullptr, (EPropertyFlags)0x002008000009001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AKKC_PickupItem, SphereComp), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SphereComp_MetaData), NewProp_SphereComp_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKKC_PickupItem_Statics::NewProp_StaticMesh = { "StaticMesh", nullptr, (EPropertyFlags)0x002008000009001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AKKC_PickupItem, StaticMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StaticMesh_MetaData), NewProp_StaticMesh_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKKC_PickupItem_Statics::NewProp_RotatingMovement = { "RotatingMovement", nullptr, (EPropertyFlags)0x002008000009001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AKKC_PickupItem, RotatingMovement), Z_Construct_UClass_URotatingMovementComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RotatingMovement_MetaData), NewProp_RotatingMovement_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AKKC_PickupItem_Statics::NewProp_InteractionWidget = { "InteractionWidget", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AKKC_PickupItem, InteractionWidget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractionWidget_MetaData), NewProp_InteractionWidget_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AKKC_PickupItem_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKKC_PickupItem_Statics::NewProp_ItemData,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKKC_PickupItem_Statics::NewProp_SphereComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKKC_PickupItem_Statics::NewProp_StaticMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKKC_PickupItem_Statics::NewProp_RotatingMovement,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AKKC_PickupItem_Statics::NewProp_InteractionWidget,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AKKC_PickupItem_Statics::PropPointers) < 2048);
 // ********** End Class AKKC_PickupItem Property Definitions ***************************************
@@ -112,6 +123,9 @@ UObject* (*const Z_Construct_UClass_AKKC_PickupItem_Statics::DependentSingletons
 	(UObject* (*)())Z_Construct_UPackage__Script_CyberWolf_57V,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AKKC_PickupItem_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AKKC_PickupItem_Statics::InterfaceParams[] = {
+	{ Z_Construct_UClass_UKKC_Interactable_NoRegister, (int32)VTABLE_OFFSET(AKKC_PickupItem, IKKC_Interactable), false },  // 2549013019
+};
 const UECodeGen_Private::FClassParams Z_Construct_UClass_AKKC_PickupItem_Statics::ClassParams = {
 	&AKKC_PickupItem::StaticClass,
 	"Engine",
@@ -119,11 +133,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AKKC_PickupItem_Statics
 	DependentSingletons,
 	nullptr,
 	Z_Construct_UClass_AKKC_PickupItem_Statics::PropPointers,
-	nullptr,
+	InterfaceParams,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
 	UE_ARRAY_COUNT(Z_Construct_UClass_AKKC_PickupItem_Statics::PropPointers),
-	0,
+	UE_ARRAY_COUNT(InterfaceParams),
 	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AKKC_PickupItem_Statics::Class_MetaDataParams), Z_Construct_UClass_AKKC_PickupItem_Statics::Class_MetaDataParams)
 };
@@ -143,15 +157,15 @@ AKKC_PickupItem::~AKKC_PickupItem() {}
 // ********** End Class AKKC_PickupItem ************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h__Script_CyberWolf_57V_Statics
+struct Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h__Script_CyberWolf_57V_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AKKC_PickupItem, AKKC_PickupItem::StaticClass, TEXT("AKKC_PickupItem"), &Z_Registration_Info_UClass_AKKC_PickupItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AKKC_PickupItem), 3653045409U) },
+		{ Z_Construct_UClass_AKKC_PickupItem, AKKC_PickupItem::StaticClass, TEXT("AKKC_PickupItem"), &Z_Registration_Info_UClass_AKKC_PickupItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AKKC_PickupItem), 3713391964U) },
 	};
-}; // Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h__Script_CyberWolf_57V_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h__Script_CyberWolf_57V_906536840{
+}; // Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h__Script_CyberWolf_57V_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h__Script_CyberWolf_57V_648375188{
 	TEXT("/Script/CyberWolf_57V"),
-	Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h__Script_CyberWolf_57V_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Objects_KKC_PickupItem_h__Script_CyberWolf_57V_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

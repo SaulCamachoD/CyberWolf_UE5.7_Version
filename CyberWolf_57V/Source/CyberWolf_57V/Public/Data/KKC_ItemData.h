@@ -8,6 +8,16 @@
 #include "KKC_ItemData.generated.h"
 
 UENUM(BlueprintType)
+enum class EItemType : uint8
+{
+	Equippable   UMETA(DisplayName = "Equippable"),   
+	Consumable   UMETA(DisplayName = "Consumable"),   
+	Companion    UMETA(DisplayName = "Companion"),   
+	KeyItem      UMETA(DisplayName = "KeyItem"),
+	Misc         UMETA(DisplayName = "Misc"), 
+};
+
+UENUM(BlueprintType)
 enum class ESlots: uint8
 {
 	Head UMETA(DisplayName = "Head"),
@@ -64,7 +74,7 @@ struct FStatsModifier
 	EModifierOperation Operation = EModifierOperation::Addition;
 };
 
-UCLASS()
+UCLASS(BlueprintType)
 class CYBERWOLF_57V_API UKKC_ItemData : public UDataAsset
 {
 	GENERATED_BODY()
@@ -85,6 +95,9 @@ class CYBERWOLF_57V_API UKKC_ItemData : public UDataAsset
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Classification")
 	EItemRarity Rarity;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Classification")
+	EItemType ItemType;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Classification")
 	FGameplayTag ItemTag;

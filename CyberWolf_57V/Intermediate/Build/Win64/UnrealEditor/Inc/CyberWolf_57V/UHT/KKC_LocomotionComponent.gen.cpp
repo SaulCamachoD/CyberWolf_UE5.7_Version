@@ -12,6 +12,7 @@ static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compi
 void EmptyLinkFunctionForGeneratedCodeKKC_LocomotionComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
+CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_CameraComponents_NoRegister();
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_LocomotionComponent();
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_LocomotionComponent_NoRegister();
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_MovementData_NoRegister();
@@ -93,6 +94,10 @@ struct Z_Construct_UClass_UKKC_LocomotionComponent_Statics
 		{ "IncludePath", "Characters/MainPlayer/PlayerComponents/KKC_LocomotionComponent.h" },
 		{ "ModuleRelativePath", "Public/Characters/MainPlayer/PlayerComponents/KKC_LocomotionComponent.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CameraComponentRef_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Characters/MainPlayer/PlayerComponents/KKC_LocomotionComponent.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MovementData_MetaData[] = {
 		{ "Category", "Data" },
 		{ "ModuleRelativePath", "Public/Characters/MainPlayer/PlayerComponents/KKC_LocomotionComponent.h" },
@@ -100,6 +105,7 @@ struct Z_Construct_UClass_UKKC_LocomotionComponent_Statics
 #endif // WITH_METADATA
 
 // ********** Begin Class UKKC_LocomotionComponent constinit property declarations *****************
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraComponentRef;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MovementData;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class UKKC_LocomotionComponent constinit property declarations *******************
@@ -118,8 +124,10 @@ struct Z_Construct_UClass_UKKC_LocomotionComponent_Statics
 }; // struct Z_Construct_UClass_UKKC_LocomotionComponent_Statics
 
 // ********** Begin Class UKKC_LocomotionComponent Property Definitions ****************************
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UKKC_LocomotionComponent_Statics::NewProp_CameraComponentRef = { "CameraComponentRef", nullptr, (EPropertyFlags)0x0124080000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_LocomotionComponent, CameraComponentRef), Z_Construct_UClass_UKKC_CameraComponents_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraComponentRef_MetaData), NewProp_CameraComponentRef_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UKKC_LocomotionComponent_Statics::NewProp_MovementData = { "MovementData", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UKKC_LocomotionComponent, MovementData), Z_Construct_UClass_UKKC_MovementData_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MovementData_MetaData), NewProp_MovementData_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UKKC_LocomotionComponent_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_LocomotionComponent_Statics::NewProp_CameraComponentRef,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UKKC_LocomotionComponent_Statics::NewProp_MovementData,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UKKC_LocomotionComponent_Statics::PropPointers) < 2048);
@@ -162,15 +170,15 @@ UKKC_LocomotionComponent::~UKKC_LocomotionComponent() {}
 // ********** End Class UKKC_LocomotionComponent ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_Statics
+struct Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UKKC_LocomotionComponent, UKKC_LocomotionComponent::StaticClass, TEXT("UKKC_LocomotionComponent"), &Z_Registration_Info_UClass_UKKC_LocomotionComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_LocomotionComponent), 1851700734U) },
+		{ Z_Construct_UClass_UKKC_LocomotionComponent, UKKC_LocomotionComponent::StaticClass, TEXT("UKKC_LocomotionComponent"), &Z_Registration_Info_UClass_UKKC_LocomotionComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_LocomotionComponent), 370510095U) },
 	};
-}; // Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_738210088{
+}; // Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_1910706612{
 	TEXT("/Script/CyberWolf_57V"),
-	Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_LocomotionComponent_h__Script_CyberWolf_57V_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

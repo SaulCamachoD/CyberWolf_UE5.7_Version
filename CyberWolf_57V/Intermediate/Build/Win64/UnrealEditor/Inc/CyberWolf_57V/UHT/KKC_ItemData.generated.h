@@ -18,7 +18,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FStatsModifier ****************************************************
 struct Z_Construct_UScriptStruct_FStatsModifier_Statics;
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h_55_GENERATED_BODY \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h_65_GENERATED_BODY \
 	friend struct ::Z_Construct_UScriptStruct_FStatsModifier_Statics; \
 	CYBERWOLF_57V_API static class UScriptStruct* StaticStruct();
 
@@ -30,7 +30,7 @@ struct FStatsModifier;
 struct Z_Construct_UClass_UKKC_ItemData_Statics;
 CYBERWOLF_57V_API UClass* Z_Construct_UClass_UKKC_ItemData_NoRegister();
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h_70_INCLASS_NO_PURE_DECLS \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h_80_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUKKC_ItemData(); \
 	friend struct ::Z_Construct_UClass_UKKC_ItemData_Statics; \
@@ -41,7 +41,7 @@ public: \
 	DECLARE_SERIALIZER(UKKC_ItemData)
 
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h_70_ENHANCED_CONSTRUCTORS \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h_80_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UKKC_ItemData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -53,12 +53,12 @@ public: \
 	NO_API virtual ~UKKC_ItemData();
 
 
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h_67_PROLOG
-#define FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h_70_GENERATED_BODY \
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h_77_PROLOG
+#define FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h_80_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h_70_INCLASS_NO_PURE_DECLS \
-	FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h_70_ENHANCED_CONSTRUCTORS \
+	FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h_80_INCLASS_NO_PURE_DECLS \
+	FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h_80_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -68,7 +68,20 @@ class UKKC_ItemData;
 // ********** End Class UKKC_ItemData **************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h
+#define CURRENT_FILE_ID FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Data_KKC_ItemData_h
+
+// ********** Begin Enum EItemType *****************************************************************
+#define FOREACH_ENUM_EITEMTYPE(op) \
+	op(EItemType::Equippable) \
+	op(EItemType::Consumable) \
+	op(EItemType::Companion) \
+	op(EItemType::KeyItem) \
+	op(EItemType::Misc) 
+
+enum class EItemType : uint8;
+template<> struct TIsUEnumClass<EItemType> { enum { Value = true }; };
+template<> CYBERWOLF_57V_NON_ATTRIBUTED_API UEnum* StaticEnum<EItemType>();
+// ********** End Enum EItemType *******************************************************************
 
 // ********** Begin Enum ESlots ********************************************************************
 #define FOREACH_ENUM_ESLOTS(op) \

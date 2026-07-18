@@ -40,18 +40,24 @@ struct Z_Construct_UEnum_CyberWolf_57V_ECameraMode_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
-		{ "Aiming.Name", "ECameraMode::Aiming" },
 		{ "BlueprintType", "true" },
+		{ "Caza.Comment", "// zoom out \xe2\x80\x94 lectura de rastros en el mapa\n" },
+		{ "Caza.Name", "ECameraMode::Caza" },
+		{ "Caza.ToolTip", "zoom out \xe2\x80\x94 lectura de rastros en el mapa" },
+		{ "Cutscene.Comment", "// zoom in \xe2\x80\x94 instinto de caza / combate\n" },
 		{ "Cutscene.Name", "ECameraMode::Cutscene" },
-		{ "Flight.Name", "ECameraMode::Flight" },
+		{ "Cutscene.ToolTip", "zoom in \xe2\x80\x94 instinto de caza / combate" },
+		{ "Default.Name", "ECameraMode::Default" },
 		{ "ModuleRelativePath", "Public/Characters/MainPlayer/PlayerComponents/KKC_CameraComponents.h" },
-		{ "ThirdPerson.Name", "ECameraMode::ThirdPerson" },
+		{ "Olfato.Comment", "// exploraci\xc3\xb3n normal\n" },
+		{ "Olfato.Name", "ECameraMode::Olfato" },
+		{ "Olfato.ToolTip", "exploraci\xc3\xb3n normal" },
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
-		{ "ECameraMode::ThirdPerson", (int64)ECameraMode::ThirdPerson },
-		{ "ECameraMode::Aiming", (int64)ECameraMode::Aiming },
-		{ "ECameraMode::Flight", (int64)ECameraMode::Flight },
+		{ "ECameraMode::Default", (int64)ECameraMode::Default },
+		{ "ECameraMode::Olfato", (int64)ECameraMode::Olfato },
+		{ "ECameraMode::Caza", (int64)ECameraMode::Caza },
 		{ "ECameraMode::Cutscene", (int64)ECameraMode::Cutscene },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
@@ -78,6 +84,62 @@ UEnum* Z_Construct_UEnum_CyberWolf_57V_ECameraMode()
 }
 // ********** End Enum ECameraMode *****************************************************************
 
+// ********** Begin Class UKKC_CameraComponents Function GetCameraYaw ******************************
+struct Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw_Statics
+{
+	struct KKC_CameraComponents_eventGetCameraYaw_Parms
+	{
+		float ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Yaw fijo de la c\xc3\xa1mara isom\xc3\xa9trica \xe2\x80\x94 lo consume LocomotionComponent\n// para alinear el input de movimiento con la pantalla\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Characters/MainPlayer/PlayerComponents/KKC_CameraComponents.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Yaw fijo de la c\xc3\xa1mara isom\xc3\xa9trica \xe2\x80\x94 lo consume LocomotionComponent\npara alinear el input de movimiento con la pantalla" },
+#endif
+	};
+#endif // WITH_METADATA
+
+// ********** Begin Function GetCameraYaw constinit property declarations **************************
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCameraYaw constinit property declarations ****************************
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+
+// ********** Begin Function GetCameraYaw Property Definitions *************************************
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(KKC_CameraComponents_eventGetCameraYaw_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw_Statics::PropPointers) < 2048);
+// ********** End Function GetCameraYaw Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UKKC_CameraComponents, nullptr, "GetCameraYaw", 	Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw_Statics::KKC_CameraComponents_eventGetCameraYaw_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw_Statics::Function_MetaDataParams), Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw_Statics::KKC_CameraComponents_eventGetCameraYaw_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UKKC_CameraComponents::execGetCameraYaw)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(float*)Z_Param__Result=P_THIS->GetCameraYaw();
+	P_NATIVE_END;
+}
+// ********** End Class UKKC_CameraComponents Function GetCameraYaw ********************************
+
 // ********** Begin Class UKKC_CameraComponents Function SetCameraMode *****************************
 struct Z_Construct_UFunction_UKKC_CameraComponents_SetCameraMode_Statics
 {
@@ -88,11 +150,11 @@ struct Z_Construct_UFunction_UKKC_CameraComponents_SetCameraMode_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "// Llamado por otros sistemas (AimComponent, FlightComponent, etc.)\n" },
+		{ "Comment", "// Llamado por otros sistemas (OlfatoComponent, CombatComponent, etc.)\n" },
 #endif
 		{ "ModuleRelativePath", "Public/Characters/MainPlayer/PlayerComponents/KKC_CameraComponents.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Llamado por otros sistemas (AimComponent, FlightComponent, etc.)" },
+		{ "ToolTip", "Llamado por otros sistemas (OlfatoComponent, CombatComponent, etc.)" },
 #endif
 	};
 #endif // WITH_METADATA
@@ -107,7 +169,7 @@ struct Z_Construct_UFunction_UKKC_CameraComponents_SetCameraMode_Statics
 
 // ********** Begin Function SetCameraMode Property Definitions ************************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UKKC_CameraComponents_SetCameraMode_Statics::NewProp_NewMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UKKC_CameraComponents_SetCameraMode_Statics::NewProp_NewMode = { "NewMode", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(KKC_CameraComponents_eventSetCameraMode_Parms, NewMode), Z_Construct_UEnum_CyberWolf_57V_ECameraMode, METADATA_PARAMS(0, nullptr) }; // 1965700464
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UKKC_CameraComponents_SetCameraMode_Statics::NewProp_NewMode = { "NewMode", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(KKC_CameraComponents_eventSetCameraMode_Parms, NewMode), Z_Construct_UEnum_CyberWolf_57V_ECameraMode, METADATA_PARAMS(0, nullptr) }; // 831939353
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UKKC_CameraComponents_SetCameraMode_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UKKC_CameraComponents_SetCameraMode_Statics::NewProp_NewMode_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UKKC_CameraComponents_SetCameraMode_Statics::NewProp_NewMode,
@@ -198,11 +260,13 @@ struct Z_Construct_UClass_UKKC_CameraComponents_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class UKKC_CameraComponents constinit property declarations **********************
 	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetCameraYaw"), .Pointer = &UKKC_CameraComponents::execGetCameraYaw },
 		{ .NameUTF8 = UTF8TEXT("SetCameraMode"), .Pointer = &UKKC_CameraComponents::execSetCameraMode },
 	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UKKC_CameraComponents_SetCameraMode, "SetCameraMode" }, // 3863012213
+		{ &Z_Construct_UFunction_UKKC_CameraComponents_GetCameraYaw, "GetCameraYaw" }, // 2669889268
+		{ &Z_Construct_UFunction_UKKC_CameraComponents_SetCameraMode, "SetCameraMode" }, // 2577409265
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -261,20 +325,20 @@ UKKC_CameraComponents::~UKKC_CameraComponents() {}
 // ********** End Class UKKC_CameraComponents ******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h__Script_CyberWolf_57V_Statics
+struct Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h__Script_CyberWolf_57V_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ ECameraMode_StaticEnum, TEXT("ECameraMode"), &Z_Registration_Info_UEnum_ECameraMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1965700464U) },
+		{ ECameraMode_StaticEnum, TEXT("ECameraMode"), &Z_Registration_Info_UEnum_ECameraMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 831939353U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UKKC_CameraComponents, UKKC_CameraComponents::StaticClass, TEXT("UKKC_CameraComponents"), &Z_Registration_Info_UClass_UKKC_CameraComponents, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_CameraComponents), 780831467U) },
+		{ Z_Construct_UClass_UKKC_CameraComponents, UKKC_CameraComponents::StaticClass, TEXT("UKKC_CameraComponents"), &Z_Registration_Info_UClass_UKKC_CameraComponents, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UKKC_CameraComponents), 2409478172U) },
 	};
-}; // Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h__Script_CyberWolf_57V_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h__Script_CyberWolf_57V_373566954{
+}; // Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h__Script_CyberWolf_57V_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h__Script_CyberWolf_57V_1788073426{
 	TEXT("/Script/CyberWolf_57V"),
-	Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h__Script_CyberWolf_57V_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h__Script_CyberWolf_57V_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h__Script_CyberWolf_57V_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h__Script_CyberWolf_57V_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h__Script_CyberWolf_57V_Statics::EnumInfo),
+	Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h__Script_CyberWolf_57V_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineProyects_CyberWolfUE5_7Game_CyberWolf_UE5_7_Version_CyberWolf_57V_Source_CyberWolf_57V_Public_Characters_MainPlayer_PlayerComponents_KKC_CameraComponents_h__Script_CyberWolf_57V_Statics::EnumInfo),
 };
 // ********** End Registration *********************************************************************
 
